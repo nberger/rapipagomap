@@ -3,7 +3,9 @@ require 'multi_json'
 
 describe "rapi_pago_list" do
   before do
-    get "/list.json?provincia=capital_federal&ciudad=almagro"
+    VCR.use_cassette('sucursales_almagro') do
+      get "/list.json?provincia=capital_federal&ciudad=almagro"
+    end
 
     @rapipagos = MultiJson.load(last_response.body)
   end
