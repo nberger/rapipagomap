@@ -9,6 +9,7 @@ require 'rapi_pago_map'
 require 'rack/test'
 require 'capybara'
 require 'capybara/dsl'
+require 'vcr_setup'
 
 RSpec.configure do |config|
   config.treat_symbols_as_metadata_keys_with_true_values = true

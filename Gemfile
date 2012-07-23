@@ -17,4 +17,6 @@ group :test do
   gem "rack-test"
   gem "capybara"
   gem "ZenTest"
+  gem "vcr"
+  gem "fakeweb"
 end

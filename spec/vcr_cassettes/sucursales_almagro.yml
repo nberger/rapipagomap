@@ -1,0 +1,1574 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.rapipago.com.ar/rapipagoWeb/index.htm
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Mechanize/2.5.1 Ruby/1.9.3p0 (http://github.com/tenderlove/mechanize/)
+      accept-encoding:
+      - gzip,deflate,identity
+      accept-charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      accept-language:
+      - en-us,en;q=0.5
+      host:
+      - www.rapipago.com.ar
+      connection:
+      - keep-alive
+      keep-alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 23 Jul 2012 14:30:07 GMT
+      server:
+      - Apache-Coyote/1.1
+      content-type:
+      - text/html;charset=UTF-8
+      content-language:
+      - en-US
+      keep-alive:
+      - timeout=15, max=100
+      connection:
+      - Keep-Alive
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "\r\n\r\n\r\n\r\n\r\n\r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML
+        1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=utf-8\" />\r\n<title>.: Rapipago:.</title>\r\n<!--
+        <script src=\"Scripts/swfobject_modified.js\" type=\"text/javascript\"></script>
+        -->\r\n<script type=\"text/javascript\" src=\"/rapipago-includes/scripts/jquery-1.4.3.min.js\"></script>\r\n<link
+        href=\"/rapipago-includes/css/styles_rapipago.css\" rel=\"stylesheet\" type=\"text/css\"
+        />\r\n\r\n<script type=\"text/javascript\">\r\n\r\n\r\nfunction cargoCiudades()
+        {\r\n\tvar id = $(\"#provinciaSuc\").find(':selected').val();\r\n\t$('#ciudadSuc').load('consultar-ciudades.htm?provinciaId='+id);\r\n}\r\n\r\nfunction
+        cargoEmpresas() {\r\n\tvar id = $(\"#rubrosImp\").find(':selected').val();\r\n\t\r\n\t$('#empresasImp').load('consultar-empresas.htm?rubroId='+id);\r\n}\r\n\r\nfunction
+        buscar(tipo){\r\n\t var listTypeField = document.getElementsByName('listType');\r\n\t
+        listTypeField.value = tipo;\r\n\t document.forms[0].action = tipo+'-'+\"buscar.htm\";\r\n\t
+        document.forms[0].submit();\r\n}\r\n\r\n\r\n</script>\r\n\r\n</head>\r\n\r\n<body>\r\n<table
+        width=\"1192\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\"
+        id=\"backGround\">\r\n  <tr>\r\n    <td><table width=\"1192\"  border=\"0\"
+        align=\"center\" cellpadding=\"0\" cellspacing=\"0\">\r\n      <tr>\r\n        <td
+        height=\"182\" colspan=\"2\" align=\"center\"><object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\"
+        codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0\"
+        width=\"1192\" height=\"182\">\r\n            <param name=\"movie\" value=\"/rapipago-includes/header.swf\"
+        />\r\n            <param name=\"quality\" value=\"high\" />\r\n            <param
+        name=\"wmode\" value=\"transparent\" />\r\n            <embed src=\"/rapipago-includes/header.swf\"
+        width=\"1192\" height=\"182\" quality=\"high\" pluginspage=\"http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash\"
+        type=\"application/x-shockwave-flash\" wmode=\"transparent\"></embed>\r\n
+        \       </object></td>\r\n      </tr>\r\n      <tr>\r\n        <td width=\"865\"
+        align=\"center\"><table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\">\r\n
+        \         <tr>\r\n            <td><object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\"
+        codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0\"
+        width=\"865\" height=\"610\">\r\n              <param name=\"movie\" value=\"/rapipago-includes/cuerpo.swf\"
+        />\r\n              <param name=\"quality\" value=\"high\" />\r\n              <param
+        name=\"wmode\" value=\"transparent\" />\r\n              <embed src=\"/rapipago-includes/cuerpo.swf\"
+        width=\"865\" height=\"610\" quality=\"high\" pluginspage=\"http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash\"
+        type=\"application/x-shockwave-flash\" wmode=\"transparent\"></embed>\r\n
+        \           </object></td>\r\n          </tr>\r\n          \r\n        </table>\r\n
+        \         </td>\r\n        <td width=\"327\" align=\"center\"><table width=\"100%\"
+        border=\"0\">\r\n          <tr>\r\n            <td align=\"center\"><img src=\"/rapipago-includes/social-media-icons.jpg\"
+        width=\"284\" height=\"52\" border=\"0\" usemap=\"#Map\" /></td>\r\n          </tr>\r\n
+        \         <tr>\r\n            <td align=\"center\">\r\n            <form id=\"form\"
+        action=\"buscar.htm\" method=\"post\">\r\n              <table width=\"284\"
+        height=\"544\" border=\"0\" id=\"backGroundBuscador\">\r\n                <tr>\r\n
+        \                 <td valign=\"top\"><table width=\"100%\" border=\"0\">\r\n
+        \                     <tr>\r\n                        <td height=\"83\">&nbsp;</td>\r\n
+        \                     </tr>\r\n                      <tr>\r\n                        <td
+        height=\"167\" align=\"center\"><table width=\"80%\" border=\"0\">\r\n                            <tr>\r\n
+        \                             <td align=\"left\"><label>\r\n                                <input
+        id=\"palabraSuc\" name=\"palabraSuc\" class=\"busqueda\" onfocus=\"this.value='';
+        this.onfocus=null;\" type=\"text\" value=\"Por palabra\" maxlength=\"100\"/>\r\n
+        \                             </label></td>\r\n                            </tr>\r\n
+        \                           <tr>\r\n                              <td align=\"left\"><label>\r\n
+        \                           <select id=\"provinciaSuc\" name=\"provinciaSuc\"
+        class=\"combo\" style=\"width: 197px\" onchange=\"javascript:cargoCiudades();\">\r\n
+        \                             \t<option value=\"\">Seleccionar Provincia</option>\r\n\t\t\t\t\t\t\t\t<option
+        value=\"B\">BUENOS AIRES</option><option value=\"C\">CAPITAL FEDERAL</option><option
+        value=\"K\">CATAMARCA</option><option value=\"H\">CHACO</option><option value=\"U\">CHUBUT</option><option
+        value=\"X\">CORDOBA</option><option value=\"W\">CORRIENTES</option><option
+        value=\"E\">ENTRE RIOS</option><option value=\"I\">EXTRANJERA</option><option
+        value=\"P\">FORMOSA</option><option value=\"Y\">JUJUY</option><option value=\"L\">LA
+        PAMPA</option><option value=\"F\">LA RIOJA</option><option value=\"M\">MENDOZA</option><option
+        value=\"N\">MISIONES</option><option value=\"Q\">NEUQUEN</option><option value=\"R\">RIO
+        NEGRO</option><option value=\"A\">SALTA</option><option value=\"J\">SAN JUAN</option><option
+        value=\"D\">SAN LUIS</option><option value=\"Z\">SANTA CRUZ</option><option
+        value=\"S\">SANTA FE</option><option value=\"G\">SANTIAGO DEL ESTERO</option><option
+        value=\"V\">TIERRA DEL FUEGO</option><option value=\"T\">TUCUMAN</option>\r\n\t\t\t\t\t\t\t</select>\r\n
+        \                             </label></td>\r\n                            </tr>\r\n
+        \                           <tr>\r\n                              <td align=\"left\">\r\n
+        \                           <select id=\"ciudadSuc\" name=\"ciudadSuc\" class=\"combo\"
+        style=\"width: 197px\">\r\n\t\t\t\t\t\t\t\t<option value=\"\">Seleccionar
+        Ciudad</option>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</select>\r\n                              </td>\r\n
+        \                           </tr>\r\n                            <tr>\r\n
+        \                             <td align=\"left\"><label>\r\n                                                            <input
+        name=\"Buscar\" type=\"button\" class=\"searchButton\" id=\"Buscar\" value=\"Buscar\"
+        \ onclick=\"buscar('suc')\"/>\r\n                              </label></td>\r\n
+        \                           </tr>\r\n                        </table></td>\r\n
+        \                     </tr>\r\n                      <tr>\r\n                        <td
+        height=\"93\">&nbsp;</td>\r\n                      </tr>\r\n                      <tr>\r\n
+        \                       <td height=\"180\" align=\"center\"><table width=\"80%\"
+        border=\"0\">\r\n                            <tr>\r\n                              <td
+        align=\"left\"><label>\r\n                                <input id=\"palabraImp\"
+        name=\"palabraImp\" class=\"busqueda\" onfocus=\"this.value=''; this.onfocus=null;\"
+        type=\"text\" value=\"Por palabra\" maxlength=\"100\"/>\r\n                              </label></td>\r\n
+        \                           </tr>\r\n                            <tr>\r\n
+        \                             <td align=\"left\"><label>\r\n                        \t<select
+        id=\"rubrosImp\" name=\"rubrosImp\" class=\"combo\" style=\"width: 197px\"
+        onchange=\"javascript:cargoEmpresas();\">\r\n                            \t<option
+        value=\"\">Seleccionar Rubro</option>\r\n \t\t\t\t\t\t\t\t<option value=\"12\">ACCESOS
+        A INTERNET</option><option value=\"20\">ADMINISTRACION DE CONSORCIOS</option><option
+        value=\"35\">ASOCIACIONES SIN FINES DE LUCRO</option><option value=\"1\">AUTOMOTRICES
+        Y PLANES DE AHORRO</option><option value=\"29\">CLUBES</option><option value=\"2\">COLEGIOS,
+        INSTITUTOS Y UNIVERSIDADES</option><option value=\"25\">COMPRAS POR INTERNET</option><option
+        value=\"33\">CONSUMO</option><option value=\"21\">COOPERATIVAS DE LUZ</option><option
+        value=\"3\">COOPERATIVAS DE SERVICIOS</option><option value=\"22\">COOPERATIVAS
+        DE TELECOMUNICACIONES</option><option value=\"4\">COSMETICOS</option><option
+        value=\"26\">FIDEICOMISOS</option><option value=\"5\">FINANCIERAS Y BANCOS</option><option
+        value=\"7\">IMPUESTOS MUNICIPALES</option><option value=\"23\">IMPUESTOS NACIONALES</option><option
+        value=\"24\">IMPUESTOS PROVINCIALES</option><option value=\"999\">INDEFINIDO</option><option
+        value=\"6\">MEDICINAS PREPAGAS</option><option value=\"30\">MUTUALES</option><option
+        value=\"31\">OBRAS SOCIALES</option><option value=\"28\">PRESTAMOS</option><option
+        value=\"34\">RECUPERO DE DEUDA</option><option value=\"8\">SEGURIDAD Y ALARMAS</option><option
+        value=\"9\">SEGUROS</option><option value=\"11\">SERVICIO DE GAS</option><option
+        value=\"10\">SERVICIOS DE AGUA</option><option value=\"13\">SERVICIOS DE LUZ</option><option
+        value=\"27\">SERVICIOS PREPAGOS Y RECARGAS</option><option value=\"15\">TARJETAS
+        DE CREDITO</option><option value=\"16\">TELEFONIA CELULAR</option><option
+        value=\"17\">TELEFONIA FIJA</option><option value=\"32\">TURISMO</option><option
+        value=\"18\">TURISMO ESTUDIANTIL</option><option value=\"14\">TV SATELITAL
+        Y CABLE</option><option value=\"19\">VARIOS</option> \r\n\t\t\t\t\t\t\t</select>\r\n
+        \                             </label></td>\r\n                            </tr>\r\n
+        \                           <tr>\r\n                              <td align=\"left\">\r\n\t
+        \                       <select id=\"empresasImp\" name=\"empresasImp\" class=\"combo\"
+        style=\"width: 197px\">\r\n\t\t\t                    <option value=\"\">Seleccionar
+        Empresa</option>\r\n \t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</select>\r\n                              </td>\r\n
+        \                           </tr>\r\n                            <tr>\r\n
+        \                             <td align=\"left\"><label>\r\n                          <input
+        type=\"button\" class=\"searchButton\" value=\"Buscar\" onclick=\"buscar('emp')\"/>\r\n
+        \                             </label></td>\r\n                            </tr>\r\n
+        \                       </table></td>\r\n                      </tr>\r\n                  </table></td>\r\n
+        \               </tr>\r\n              </table>\r\n            </form></td>\r\n
+        \         </tr>\r\n        </table>\r\n   \t\t<input id=\"listType\" name=\"listType\"
+        type=\"hidden\" value=\"\"/> \r\n        </form>    \r\n        <p>&nbsp;</p>\r\n
+        \       </td>\r\n      </tr>\r\n      \r\n      <tr>\r\n        <td height=\"50\"
+        colspan=\"2\" align=\"center\"><img src=\"/rapipago-includes/footer-text.png\"
+        width=\"991\" height=\"12\" /></td>\r\n      </tr>\r\n    </table></td>\r\n
+        \ </tr>\r\n</table>\r\n\r\n\r\n<map name=\"Map\" id=\"Map\"><area shape=\"rect\"
+        coords=\"135,8,180,47\" href=\"http://www.facebook.com/tuRapipago\" target=\"_blank\"
+        />\r\n<area shape=\"rect\" coords=\"185,8,230,46\" href=\"http://www.twitter.com/turapipago\"
+        target=\"_blank\" />\r\n</map><script type=\"text/javascript\">\r\nswfobject.registerObject(\"FlashID\");\r\n</script></body>\r\n</html>\r\n"
+    http_version: '1.1'
+  recorded_at: Mon, 23 Jul 2012 14:30:19 GMT
+- request:
+    method: post
+    uri: http://www.rapipago.com.ar/rapipagoWeb/suc-buscar.htm
+    body:
+      encoding: UTF-8
+      string: palabraSuc=Por+palabra&provinciaSuc=C&ciudadSuc=&palabraImp=Por+palabra&rubrosImp=&empresasImp=
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Mechanize/2.5.1 Ruby/1.9.3p0 (http://github.com/tenderlove/mechanize/)
+      accept-encoding:
+      - gzip,deflate,identity
+      accept-charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      accept-language:
+      - en-us,en;q=0.5
+      host:
+      - www.rapipago.com.ar
+      referer:
+      - !ruby/object:URI::HTTP
+        scheme: http
+        user: 
+        password: 
+        host: www.rapipago.com.ar
+        port: 80
+        path: /rapipagoWeb/index.htm
+        query: 
+        opaque: 
+        registry: 
+        fragment: 
+        parser: 
+      content-type:
+      - application/x-www-form-urlencoded
+      content-length:
+      - '95'
+      connection:
+      - keep-alive
+      keep-alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 23 Jul 2012 14:30:07 GMT
+      server:
+      - Apache-Coyote/1.1
+      content-type:
+      - text/html;charset=UTF-8
+      content-language:
+      - en-US
+      keep-alive:
+      - timeout=15, max=100
+      connection:
+      - Keep-Alive
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "\r\n\r\n\r\n\r\n\r\n\r\n \r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD
+        XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=utf-8\" />\r\n<title>.: Rapipago:.</title>\r\n<script
+        type=\"text/javascript\" src=\"rapipago-includes/scripts/jquery-1.4.3.min.js\"></script>\r\n<link
+        href=\"/rapipago-includes/css/styles_rapipago.css\" rel=\"stylesheet\" type=\"text/css\"
+        />\r\n<script type=\"text/javascript\">\r\nfunction cargoCiudades() {\r\n\tvar
+        id = $(\"#provinciaSuc\").find(':selected').val();\r\n\t$('#ciudadSuc').load('consultar-ciudades.htm?provinciaId='+id);\r\n}\r\n\r\nfunction
+        cargoEmpresas() {\r\n\tvar id = $(\"#rubrosImp\").find(':selected').val();\r\n\t\r\n\t$('#empresasImp').load('consultar-empresas.htm?rubroId='+id);\r\n}\r\n\r\nfunction
+        buscar(tipo){\r\n\t var listTypeField = document.getElementsByName('listType');\r\n\t
+        listTypeField.value = tipo;\r\n \t document.forms[0].action = tipo+'-'+\"buscar.htm\";\r\n\t
+        document.forms[0].submit();\r\n\t}\r\n\t\r\nfunction verDetalle(id){\r\n\t
+        var sucursalIdField = document.getElementsByName('sucursalId');\r\n\t sucursalIdField.value
+        = id;\r\n\t document.forms[0].action = \"sucursal-detalle.htm?sucursalId=\"+id;\r\n\t
+        document.forms[0].submit();\r\n\t}\r\n\t\r\nfunction doPage(pageNumber){\r\n\t
+        \ var listTypeField = document.getElementsByName('listType')[0];\r\n\t listTypeField.value
+        = 'doPage';\r\n\t var actionOld = document.forms[0].action;\r\n\t var urlparts
+        = actionOld.split('?')\r\n\t var actionNew = '';\r\n\t \r\n\t if(urlparts[0]
+        != null && urlparts[0] != ''){\r\n\t   actionNew = urlparts[0] + '?pageNum='
+        + pageNumber;\r\n\t }else{\r\n\t   actionNew = document.forms[0].action;\r\n\t
+        }\r\n\r\n\t document.forms[0].action = actionNew;\r\n\t document.forms[0].submit();\r\n\t}\r\n\t\r\n</script>\r\n\r\n\r\n\r\n</head>\r\n\r\n<body>\r\n<table
+        width=\"1192\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\"
+        id=\"backGround\">\r\n  <tr>\r\n    <td>\r\n    <form id=\"form\" action=\"suc-buscar.htm\"
+        method=\"post\">\r\n    <table width=\"1192\"  border=\"0\" align=\"center\"
+        cellpadding=\"0\" cellspacing=\"0\">\r\n      <tr>\r\n        <td height=\"182\"
+        colspan=\"2\" align=\"center\"><object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\"
+        codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0\"
+        width=\"1192\" height=\"182\">\r\n            <param name=\"movie\" value=\"header.swf\"
+        />\r\n            <param name=\"quality\" value=\"high\" />\r\n            <param
+        name=\"wmode\" value=\"transparent\" />\r\n            <embed src=\"rapipago-includes/header.swf\"
+        width=\"1192\" height=\"182\" quality=\"high\" pluginspage=\"http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash\"
+        type=\"application/x-shockwave-flash\" wmode=\"transparent\"></embed>\r\n
+        \       </object></td>\r\n      </tr>\r\n      <tr>\r\n        <td width=\"865\"
+        height=\"120\" align=\"left\"><p><img src=\"rapipago-includes/title-sucursales.png\"
+        width=\"761\" height=\"150\" /></p></td>\r\n        <td width=\"327\" rowspan=\"2\"
+        align=\"center\" valign=\"top\">\r\n          <p>&nbsp;</p>\r\n          <table
+        width=\"284\" height=\"544\" border=\"0\" id=\"backGroundBuscador\">\r\n            <tr>\r\n
+        \             <td valign=\"top\"><table width=\"100%\" border=\"0\">\r\n                  <tr>\r\n
+        \                   <td height=\"83\">&nbsp;</td>\r\n                  </tr>\r\n
+        \                 <tr>\r\n                    <td height=\"167\" align=\"center\"><table
+        width=\"80%\" border=\"0\">\r\n                        <tr>\r\n                          <td
+        align=\"left\"><label>\r\n                            <input id=\"palabraSuc\"
+        name=\"palabraSuc\" class=\"busqueda\" onfocus=\"this.value=''; this.onfocus=null;\"
+        type=\"text\" value=\"Por palabra\" maxlength=\"100\"/>\r\n                          </label></td>\r\n
+        \                       </tr>\r\n                        <tr>\r\n                          <td
+        align=\"left\"><label>\r\n                            <select id=\"provinciaSuc\"
+        name=\"provinciaSuc\" class=\"combo\" style=\"width: 197px\" onchange=\"javascript:cargoCiudades();\">\r\n
+        \                             \t<option value=\"\">Seleccionar Provincia</option>\r\n\t\t\t\t\t\t\t\t<option
+        value=\"B\">BUENOS AIRES</option><option value=\"C\" selected=\"selected\">CAPITAL
+        FEDERAL</option><option value=\"K\">CATAMARCA</option><option value=\"H\">CHACO</option><option
+        value=\"U\">CHUBUT</option><option value=\"X\">CORDOBA</option><option value=\"W\">CORRIENTES</option><option
+        value=\"E\">ENTRE RIOS</option><option value=\"I\">EXTRANJERA</option><option
+        value=\"P\">FORMOSA</option><option value=\"Y\">JUJUY</option><option value=\"L\">LA
+        PAMPA</option><option value=\"F\">LA RIOJA</option><option value=\"M\">MENDOZA</option><option
+        value=\"N\">MISIONES</option><option value=\"Q\">NEUQUEN</option><option value=\"R\">RIO
+        NEGRO</option><option value=\"A\">SALTA</option><option value=\"J\">SAN JUAN</option><option
+        value=\"D\">SAN LUIS</option><option value=\"Z\">SANTA CRUZ</option><option
+        value=\"S\">SANTA FE</option><option value=\"G\">SANTIAGO DEL ESTERO</option><option
+        value=\"V\">TIERRA DEL FUEGO</option><option value=\"T\">TUCUMAN</option>\r\n\t\t\t\t\t\t\t</select>\r\n
+        \                         </label></td>\r\n                        </tr>\r\n
+        \                       <tr>\r\n                          <td align=\"left\">\r\n
+        \                           <select id=\"ciudadSuc\" name=\"ciudadSuc\" class=\"combo\"
+        style=\"width: 197px\">\r\n\t\t\t\t\t\t\t\t<option value=\"\" selected=\"selected\">Seleccionar
+        Ciudad</option>\r\n\t\t\t\t\t\t\t\t<option value=\"AGRONOMIA\">AGRONOMIA</option><option
+        value=\"ALMAGRO\">ALMAGRO</option><option value=\"BALVANERA\">BALVANERA</option><option
+        value=\"BARRACAS\">BARRACAS</option><option value=\"BELGRANO\">BELGRANO</option><option
+        value=\"BOEDO\">BOEDO</option><option value=\"CABALLITO\">CABALLITO</option><option
+        value=\"CHACARITA\">CHACARITA</option><option value=\"CIUDAD AUTONOMA BUENOS
+        AIRES\">CIUDAD AUTONOMA BUENOS AIRES</option><option value=\"COLEGIALES\">COLEGIALES</option><option
+        value=\"CONSTITUCION\">CONSTITUCION</option><option value=\"FLORES\">FLORES</option><option
+        value=\"FLORESTA\">FLORESTA</option><option value=\"LA BOCA\">LA BOCA</option><option
+        value=\"LINIERS\">LINIERS</option><option value=\"MATADEROS\">MATADEROS</option><option
+        value=\"MONSERRAT\">MONSERRAT</option><option value=\"MONTE CASTRO\">MONTE
+        CASTRO</option><option value=\"NUEVA POMPEYA\">NUEVA POMPEYA</option><option
+        value=\"NU&Ntilde;EZ\">NU&Ntilde;EZ</option><option value=\"PALERMO\">PALERMO</option><option
+        value=\"PARQUE AVELLANEDA\">PARQUE AVELLANEDA</option><option value=\"PARQUE
+        CHACABUCO\">PARQUE CHACABUCO</option><option value=\"PARQUE PATRICIOS\">PARQUE
+        PATRICIOS</option><option value=\"PATERNAL\">PATERNAL</option><option value=\"RECOLETA\">RECOLETA</option><option
+        value=\"RETIRO\">RETIRO</option><option value=\"SAAVEDRA\">SAAVEDRA</option><option
+        value=\"SAN CRISTOBAL\">SAN CRISTOBAL</option><option value=\"SAN NICOLAS\">SAN
+        NICOLAS</option><option value=\"SAN TELMO\">SAN TELMO</option><option value=\"VELEZ
+        SARSFIELD\">VELEZ SARSFIELD</option><option value=\"VILLA CRESPO\">VILLA CRESPO</option><option
+        value=\"VILLA DEL PARQUE\">VILLA DEL PARQUE</option><option value=\"VILLA
+        DEVOTO\">VILLA DEVOTO</option><option value=\"VILLA GENERAL MITRE\">VILLA
+        GENERAL MITRE</option><option value=\"VILLA LUGANO\">VILLA LUGANO</option><option
+        value=\"VILLA LURO\">VILLA LURO</option><option value=\"VILLA PUEYRREDON\">VILLA
+        PUEYRREDON</option><option value=\"VILLA RIACHUELO\">VILLA RIACHUELO</option><option
+        value=\"VILLA SANTA RITA\">VILLA SANTA RITA</option><option value=\"VILLA
+        SOLDATI\">VILLA SOLDATI</option><option value=\"VILLA URQUIZA\">VILLA URQUIZA</option>\r\n\t\t\t\t\t\t\t</select>\r\n\t\t\t\t\t\t
+        \ </td>\r\n                        </tr>\r\n                        <tr>\r\n
+        \                         <td align=\"right\"><label>\r\n                            <input
+        name=\"Buscar\" type=\"button\" class=\"searchButton\" id=\"Buscar\" value=\"Buscar\"
+        \ onclick=\"buscar('suc')\"/>\r\n                          </label></td>\r\n
+        \                       </tr>\r\n                    </table></td>\r\n                  </tr>\r\n
+        \                 <tr>\r\n                    <td height=\"93\">&nbsp;</td>\r\n
+        \                 </tr>\r\n                  <tr>\r\n                    <td
+        height=\"180\" align=\"center\"><table width=\"80%\" border=\"0\">\r\n                      <tr>\r\n
+        \                       <td align=\"left\"><label>\r\n                          <input
+        id=\"palabraImp\" name=\"palabraImp\" class=\"busqueda\" onfocus=\"this.value='';
+        this.onfocus=null;\" type=\"text\" value=\"Por palabra\" maxlength=\"100\"/>\r\n
+        \                       </label></td>\r\n                      </tr>\r\n                      <tr>\r\n
+        \                       <td align=\"left\"><label>\r\n                        \t<select
+        id=\"rubrosImp\" name=\"rubrosImp\" class=\"combo\" style=\"width: 197px\"
+        onchange=\"javascript:cargoEmpresas();\">\r\n                            \t<option
+        value=\"\" selected=\"selected\">Seleccionar Rubro</option>\r\n \t\t\t\t\t\t\t\t<option
+        value=\"12\">ACCESOS A INTERNET</option><option value=\"20\">ADMINISTRACION
+        DE CONSORCIOS</option><option value=\"35\">ASOCIACIONES SIN FINES DE LUCRO</option><option
+        value=\"1\">AUTOMOTRICES Y PLANES DE AHORRO</option><option value=\"29\">CLUBES</option><option
+        value=\"2\">COLEGIOS, INSTITUTOS Y UNIVERSIDADES</option><option value=\"25\">COMPRAS
+        POR INTERNET</option><option value=\"33\">CONSUMO</option><option value=\"21\">COOPERATIVAS
+        DE LUZ</option><option value=\"3\">COOPERATIVAS DE SERVICIOS</option><option
+        value=\"22\">COOPERATIVAS DE TELECOMUNICACIONES</option><option value=\"4\">COSMETICOS</option><option
+        value=\"26\">FIDEICOMISOS</option><option value=\"5\">FINANCIERAS Y BANCOS</option><option
+        value=\"7\">IMPUESTOS MUNICIPALES</option><option value=\"23\">IMPUESTOS NACIONALES</option><option
+        value=\"24\">IMPUESTOS PROVINCIALES</option><option value=\"999\">INDEFINIDO</option><option
+        value=\"6\">MEDICINAS PREPAGAS</option><option value=\"30\">MUTUALES</option><option
+        value=\"31\">OBRAS SOCIALES</option><option value=\"28\">PRESTAMOS</option><option
+        value=\"34\">RECUPERO DE DEUDA</option><option value=\"8\">SEGURIDAD Y ALARMAS</option><option
+        value=\"9\">SEGUROS</option><option value=\"11\">SERVICIO DE GAS</option><option
+        value=\"10\">SERVICIOS DE AGUA</option><option value=\"13\">SERVICIOS DE LUZ</option><option
+        value=\"27\">SERVICIOS PREPAGOS Y RECARGAS</option><option value=\"15\">TARJETAS
+        DE CREDITO</option><option value=\"16\">TELEFONIA CELULAR</option><option
+        value=\"17\">TELEFONIA FIJA</option><option value=\"32\">TURISMO</option><option
+        value=\"18\">TURISMO ESTUDIANTIL</option><option value=\"14\">TV SATELITAL
+        Y CABLE</option><option value=\"19\">VARIOS</option> \r\n\t\t\t\t\t\t\t</select>\r\n
+        \                       </label></td>\r\n                      </tr>\r\n                      <tr>\r\n
+        \                       <td align=\"left\">\r\n\t                        <select
+        id=\"empresasImp\" name=\"empresasImp\" class=\"combo\" style=\"width: 197px\">\r\n\t\t\t
+        \                   <option value=\"\" selected=\"selected\">Seleccionar Empresa</option>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</select>\r\n\t\t\t\t\t
+        \   </td>\r\n                      </tr>\r\n                      <tr>\r\n
+        \                       <td align=\"left\"><label>\r\n                          <input
+        type=\"button\" class=\"searchButton\" value=\"Buscar\" onclick=\"buscar('emp')\"/>\r\n
+        \                       </label></td>\r\n                      </tr>\r\n                    </table></td>\r\n
+        \                 </tr>\r\n              </table></td>\r\n            </tr>\r\n
+        \         </table>\r\n          <input id=\"listType\" name=\"listType\" type=\"hidden\"
+        value=\"\"/> \r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td
+        align=\"center\" valign=\"top\">\r\n        \r\n        \r\n\t\t\r\n\t\t\r\n\t\t<table
+        width=\"735\" border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td
+        width=\"168\" rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">4145</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">&#034;
+        AGENCIA 14 &#034;</td>\r\n          </tr>\r\n          <tr>\r\n            <td
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\">AV TRIUNVIRATO 4672</td>\r\n
+        \         </tr>\r\n          <tr>\r\n            <td align=\"right\" bgcolor=\"#BCDAE9\"
+        class=\"resultadosText\"><a onclick=\"verDetalle('4145')\" href=\"#\">+ Ver
+        mas</a></td>\r\n          </tr>\r\n        </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table
+        width=\"735\" border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td
+        width=\"168\" rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">9596</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">&#034;
+        LA 2115 &#034;</td>\r\n          </tr>\r\n          <tr>\r\n            <td
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\">AV GRAL LUIS MARIA CAMPOS 1482</td>\r\n
+        \         </tr>\r\n          <tr>\r\n            <td align=\"right\" bgcolor=\"#BCDAE9\"
+        class=\"resultadosText\"><a onclick=\"verDetalle('9596')\" href=\"#\">+ Ver
+        mas</a></td>\r\n          </tr>\r\n        </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table
+        width=\"735\" border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td
+        width=\"168\" rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">9912</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">&#034;DELFOS&#034;</td>\r\n
+        \         </tr>\r\n          <tr>\r\n            <td bgcolor=\"#BCDAE9\" class=\"resultadosText\">GUIDO
+        1692</td>\r\n          </tr>\r\n          <tr>\r\n            <td align=\"right\"
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a onclick=\"verDetalle('9912')\"
+        href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n        </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table
+        width=\"735\" border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td
+        width=\"168\" rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">3375</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">&#034;LOCUTORIO
+        SAN PEDRITO&#034;</td>\r\n          </tr>\r\n          <tr>\r\n            <td
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\">AV SAN PEDRITO 1397</td>\r\n
+        \         </tr>\r\n          <tr>\r\n            <td align=\"right\" bgcolor=\"#BCDAE9\"
+        class=\"resultadosText\"><a onclick=\"verDetalle('3375')\" href=\"#\">+ Ver
+        mas</a></td>\r\n          </tr>\r\n        </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table
+        width=\"735\" border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td
+        width=\"168\" rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">7104</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">A
+        y M Publicidad \t\t </td>\r\n          </tr>\r\n          <tr>\r\n            <td
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\">VIAMONTE 1633 \t  1633</td>\r\n
+        \         </tr>\r\n          <tr>\r\n            <td align=\"right\" bgcolor=\"#BCDAE9\"
+        class=\"resultadosText\"><a onclick=\"verDetalle('7104')\" href=\"#\">+ Ver
+        mas</a></td>\r\n          </tr>\r\n        </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table
+        width=\"735\" border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td
+        width=\"168\" rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">4261</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">ABATE
+        CECILIA ARGENTINA</td>\r\n          </tr>\r\n          <tr>\r\n            <td
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\">BULNES 2026</td>\r\n          </tr>\r\n
+        \         <tr>\r\n            <td align=\"right\" bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a
+        onclick=\"verDetalle('4261')\" href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n
+        \       </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n<!--
+        \t\t\t<ul class=\"paginador\"> -->\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t<table
+        border=\"0\" cellspacing=\"0\">\n<tr><td>Pages:</td><td>&nbsp;</td><td><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('1');\" title=\"1\">1&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></td><td>&nbsp;</td><td><a href=\"index?pageNum=2\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('2');\" title=\"2\">2&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=3\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('3');\" title=\"3\">3&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=4\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('4');\" title=\"4\">4&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=5\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('5');\" title=\"5\">5&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=6\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('6');\" title=\"6\">6&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=7\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('7');\" title=\"7\">7&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=8\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('8');\" title=\"8\">8&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=9\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('9');\" title=\"9\">9&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=10\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('10');\" title=\"10\">10&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=11\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('11');\" title=\"11\">11&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=12\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('12');\" title=\"12\">12&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=13\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('13');\" title=\"13\">13&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=14\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('14');\" title=\"14\">14&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=15\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('15');\" title=\"15\">15&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=16\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('16');\" title=\"16\">16&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=17\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('17');\" title=\"17\">17&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=18\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('18');\" title=\"18\">18&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=19\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('19');\" title=\"19\">19&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=20\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('20');\" title=\"20\">20&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=21\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('21');\" title=\"21\">21&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=22\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('22');\" title=\"22\">22&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=23\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('23');\" title=\"23\">23&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=24\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('24');\" title=\"24\">24&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=25\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('25');\" title=\"25\">25&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=26\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('26');\" title=\"26\">26&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=27\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('27');\" title=\"27\">27&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=28\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('28');\" title=\"28\">28&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=29\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('29');\" title=\"29\">29&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=30\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('30');\" title=\"30\">30&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=31\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('31');\" title=\"31\">31&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=32\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('32');\" title=\"32\">32&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=33\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('33');\" title=\"33\">33&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=34\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('34');\" title=\"34\">34&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=35\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('35');\" title=\"35\">35&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=36\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('36');\" title=\"36\">36&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=37\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('37');\" title=\"37\">37&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=38\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('38');\" title=\"38\">38&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=39\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('39');\" title=\"39\">39&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=40\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('40');\" title=\"40\">40&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=41\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('41');\" title=\"41\">41&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=42\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('42');\" title=\"42\">42&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=43\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('43');\" title=\"43\">43&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=44\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('44');\" title=\"44\">44&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=45\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('45');\" title=\"45\">45&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=46\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('46');\" title=\"46\">46&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=47\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('47');\" title=\"47\">47&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=48\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('48');\" title=\"48\">48&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=49\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('49');\" title=\"49\">49&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=50\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('50');\" title=\"50\">50&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=51\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('51');\" title=\"51\">51&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=52\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('52');\" title=\"52\">52&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=53\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('53');\" title=\"53\">53&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=54\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('54');\" title=\"54\">54&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=55\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('55');\" title=\"55\">55&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=56\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('56');\" title=\"56\">56&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=57\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('57');\" title=\"57\">57&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=58\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('58');\" title=\"58\">58&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=59\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('59');\" title=\"59\">59&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=60\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('60');\" title=\"60\">60&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=61\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('61');\" title=\"61\">61&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=62\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('62');\" title=\"62\">62&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=63\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('63');\" title=\"63\">63&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=64\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('64');\" title=\"64\">64&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=65\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('65');\" title=\"65\">65&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=66\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('66');\" title=\"66\">66&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=67\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('67');\" title=\"67\">67&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td></tr></table>\n\r\n<!-- \t\t\t</ul> -->\r\n\t\t
+        \    \r\n          <p>&nbsp;</p></td>\r\n      </tr>\r\n      \r\n      <tr>\r\n
+        \       <td height=\"50\" colspan=\"2\" align=\"center\"><img src=\"rapipago-includes/footer-text.png\"
+        width=\"991\" height=\"12\" /></td>\r\n      </tr>\r\n    </table>\r\n    </form>\r\n
+        \   </td>\r\n  </tr>\r\n</table>\r\n<script type=\"text/javascript\">\r\nswfobject.registerObject(\"FlashID\");\r\n</script>\r\n</body>\r\n</html>\r\n"
+    http_version: '1.1'
+  recorded_at: Mon, 23 Jul 2012 14:30:19 GMT
+- request:
+    method: post
+    uri: http://www.rapipago.com.ar/rapipagoWeb/suc-buscar.htm
+    body:
+      encoding: UTF-8
+      string: palabraSuc=Por+palabra&provinciaSuc=C&ciudadSuc=ALMAGRO&palabraImp=Por+palabra&rubrosImp=&empresasImp=&listType=
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Mechanize/2.5.1 Ruby/1.9.3p0 (http://github.com/tenderlove/mechanize/)
+      accept-encoding:
+      - gzip,deflate,identity
+      accept-charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      accept-language:
+      - en-us,en;q=0.5
+      host:
+      - www.rapipago.com.ar
+      referer:
+      - !ruby/object:URI::HTTP
+        scheme: http
+        user: 
+        password: 
+        host: www.rapipago.com.ar
+        port: 80
+        path: /rapipagoWeb/suc-buscar.htm
+        query: 
+        opaque: 
+        registry: 
+        fragment: 
+        parser: 
+      content-type:
+      - application/x-www-form-urlencoded
+      content-length:
+      - '112'
+      connection:
+      - keep-alive
+      keep-alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 23 Jul 2012 14:30:08 GMT
+      server:
+      - Apache-Coyote/1.1
+      content-type:
+      - text/html;charset=UTF-8
+      content-language:
+      - en-US
+      keep-alive:
+      - timeout=15, max=100
+      connection:
+      - Keep-Alive
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: ! "\r\n\r\n\r\n\r\n\r\n\r\n \r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD
+        XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=utf-8\" />\r\n<title>.: Rapipago:.</title>\r\n<script
+        type=\"text/javascript\" src=\"rapipago-includes/scripts/jquery-1.4.3.min.js\"></script>\r\n<link
+        href=\"/rapipago-includes/css/styles_rapipago.css\" rel=\"stylesheet\" type=\"text/css\"
+        />\r\n<script type=\"text/javascript\">\r\nfunction cargoCiudades() {\r\n\tvar
+        id = $(\"#provinciaSuc\").find(':selected').val();\r\n\t$('#ciudadSuc').load('consultar-ciudades.htm?provinciaId='+id);\r\n}\r\n\r\nfunction
+        cargoEmpresas() {\r\n\tvar id = $(\"#rubrosImp\").find(':selected').val();\r\n\t\r\n\t$('#empresasImp').load('consultar-empresas.htm?rubroId='+id);\r\n}\r\n\r\nfunction
+        buscar(tipo){\r\n\t var listTypeField = document.getElementsByName('listType');\r\n\t
+        listTypeField.value = tipo;\r\n \t document.forms[0].action = tipo+'-'+\"buscar.htm\";\r\n\t
+        document.forms[0].submit();\r\n\t}\r\n\t\r\nfunction verDetalle(id){\r\n\t
+        var sucursalIdField = document.getElementsByName('sucursalId');\r\n\t sucursalIdField.value
+        = id;\r\n\t document.forms[0].action = \"sucursal-detalle.htm?sucursalId=\"+id;\r\n\t
+        document.forms[0].submit();\r\n\t}\r\n\t\r\nfunction doPage(pageNumber){\r\n\t
+        \ var listTypeField = document.getElementsByName('listType')[0];\r\n\t listTypeField.value
+        = 'doPage';\r\n\t var actionOld = document.forms[0].action;\r\n\t var urlparts
+        = actionOld.split('?')\r\n\t var actionNew = '';\r\n\t \r\n\t if(urlparts[0]
+        != null && urlparts[0] != ''){\r\n\t   actionNew = urlparts[0] + '?pageNum='
+        + pageNumber;\r\n\t }else{\r\n\t   actionNew = document.forms[0].action;\r\n\t
+        }\r\n\r\n\t document.forms[0].action = actionNew;\r\n\t document.forms[0].submit();\r\n\t}\r\n\t\r\n</script>\r\n\r\n\r\n\r\n</head>\r\n\r\n<body>\r\n<table
+        width=\"1192\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\"
+        id=\"backGround\">\r\n  <tr>\r\n    <td>\r\n    <form id=\"form\" action=\"suc-buscar.htm\"
+        method=\"post\">\r\n    <table width=\"1192\"  border=\"0\" align=\"center\"
+        cellpadding=\"0\" cellspacing=\"0\">\r\n      <tr>\r\n        <td height=\"182\"
+        colspan=\"2\" align=\"center\"><object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\"
+        codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0\"
+        width=\"1192\" height=\"182\">\r\n            <param name=\"movie\" value=\"header.swf\"
+        />\r\n            <param name=\"quality\" value=\"high\" />\r\n            <param
+        name=\"wmode\" value=\"transparent\" />\r\n            <embed src=\"rapipago-includes/header.swf\"
+        width=\"1192\" height=\"182\" quality=\"high\" pluginspage=\"http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash\"
+        type=\"application/x-shockwave-flash\" wmode=\"transparent\"></embed>\r\n
+        \       </object></td>\r\n      </tr>\r\n      <tr>\r\n        <td width=\"865\"
+        height=\"120\" align=\"left\"><p><img src=\"rapipago-includes/title-sucursales.png\"
+        width=\"761\" height=\"150\" /></p></td>\r\n        <td width=\"327\" rowspan=\"2\"
+        align=\"center\" valign=\"top\">\r\n          <p>&nbsp;</p>\r\n          <table
+        width=\"284\" height=\"544\" border=\"0\" id=\"backGroundBuscador\">\r\n            <tr>\r\n
+        \             <td valign=\"top\"><table width=\"100%\" border=\"0\">\r\n                  <tr>\r\n
+        \                   <td height=\"83\">&nbsp;</td>\r\n                  </tr>\r\n
+        \                 <tr>\r\n                    <td height=\"167\" align=\"center\"><table
+        width=\"80%\" border=\"0\">\r\n                        <tr>\r\n                          <td
+        align=\"left\"><label>\r\n                            <input id=\"palabraSuc\"
+        name=\"palabraSuc\" class=\"busqueda\" onfocus=\"this.value=''; this.onfocus=null;\"
+        type=\"text\" value=\"Por palabra\" maxlength=\"100\"/>\r\n                          </label></td>\r\n
+        \                       </tr>\r\n                        <tr>\r\n                          <td
+        align=\"left\"><label>\r\n                            <select id=\"provinciaSuc\"
+        name=\"provinciaSuc\" class=\"combo\" style=\"width: 197px\" onchange=\"javascript:cargoCiudades();\">\r\n
+        \                             \t<option value=\"\">Seleccionar Provincia</option>\r\n\t\t\t\t\t\t\t\t<option
+        value=\"B\">BUENOS AIRES</option><option value=\"C\" selected=\"selected\">CAPITAL
+        FEDERAL</option><option value=\"K\">CATAMARCA</option><option value=\"H\">CHACO</option><option
+        value=\"U\">CHUBUT</option><option value=\"X\">CORDOBA</option><option value=\"W\">CORRIENTES</option><option
+        value=\"E\">ENTRE RIOS</option><option value=\"I\">EXTRANJERA</option><option
+        value=\"P\">FORMOSA</option><option value=\"Y\">JUJUY</option><option value=\"L\">LA
+        PAMPA</option><option value=\"F\">LA RIOJA</option><option value=\"M\">MENDOZA</option><option
+        value=\"N\">MISIONES</option><option value=\"Q\">NEUQUEN</option><option value=\"R\">RIO
+        NEGRO</option><option value=\"A\">SALTA</option><option value=\"J\">SAN JUAN</option><option
+        value=\"D\">SAN LUIS</option><option value=\"Z\">SANTA CRUZ</option><option
+        value=\"S\">SANTA FE</option><option value=\"G\">SANTIAGO DEL ESTERO</option><option
+        value=\"V\">TIERRA DEL FUEGO</option><option value=\"T\">TUCUMAN</option>\r\n\t\t\t\t\t\t\t</select>\r\n
+        \                         </label></td>\r\n                        </tr>\r\n
+        \                       <tr>\r\n                          <td align=\"left\">\r\n
+        \                           <select id=\"ciudadSuc\" name=\"ciudadSuc\" class=\"combo\"
+        style=\"width: 197px\">\r\n\t\t\t\t\t\t\t\t<option value=\"\">Seleccionar
+        Ciudad</option>\r\n\t\t\t\t\t\t\t\t<option value=\"AGRONOMIA\">AGRONOMIA</option><option
+        value=\"ALMAGRO\" selected=\"selected\">ALMAGRO</option><option value=\"BALVANERA\">BALVANERA</option><option
+        value=\"BARRACAS\">BARRACAS</option><option value=\"BELGRANO\">BELGRANO</option><option
+        value=\"BOEDO\">BOEDO</option><option value=\"CABALLITO\">CABALLITO</option><option
+        value=\"CHACARITA\">CHACARITA</option><option value=\"CIUDAD AUTONOMA BUENOS
+        AIRES\">CIUDAD AUTONOMA BUENOS AIRES</option><option value=\"COLEGIALES\">COLEGIALES</option><option
+        value=\"CONSTITUCION\">CONSTITUCION</option><option value=\"FLORES\">FLORES</option><option
+        value=\"FLORESTA\">FLORESTA</option><option value=\"LA BOCA\">LA BOCA</option><option
+        value=\"LINIERS\">LINIERS</option><option value=\"MATADEROS\">MATADEROS</option><option
+        value=\"MONSERRAT\">MONSERRAT</option><option value=\"MONTE CASTRO\">MONTE
+        CASTRO</option><option value=\"NUEVA POMPEYA\">NUEVA POMPEYA</option><option
+        value=\"NU&Ntilde;EZ\">NU&Ntilde;EZ</option><option value=\"PALERMO\">PALERMO</option><option
+        value=\"PARQUE AVELLANEDA\">PARQUE AVELLANEDA</option><option value=\"PARQUE
+        CHACABUCO\">PARQUE CHACABUCO</option><option value=\"PARQUE PATRICIOS\">PARQUE
+        PATRICIOS</option><option value=\"PATERNAL\">PATERNAL</option><option value=\"RECOLETA\">RECOLETA</option><option
+        value=\"RETIRO\">RETIRO</option><option value=\"SAAVEDRA\">SAAVEDRA</option><option
+        value=\"SAN CRISTOBAL\">SAN CRISTOBAL</option><option value=\"SAN NICOLAS\">SAN
+        NICOLAS</option><option value=\"SAN TELMO\">SAN TELMO</option><option value=\"VELEZ
+        SARSFIELD\">VELEZ SARSFIELD</option><option value=\"VILLA CRESPO\">VILLA CRESPO</option><option
+        value=\"VILLA DEL PARQUE\">VILLA DEL PARQUE</option><option value=\"VILLA
+        DEVOTO\">VILLA DEVOTO</option><option value=\"VILLA GENERAL MITRE\">VILLA
+        GENERAL MITRE</option><option value=\"VILLA LUGANO\">VILLA LUGANO</option><option
+        value=\"VILLA LURO\">VILLA LURO</option><option value=\"VILLA PUEYRREDON\">VILLA
+        PUEYRREDON</option><option value=\"VILLA RIACHUELO\">VILLA RIACHUELO</option><option
+        value=\"VILLA SANTA RITA\">VILLA SANTA RITA</option><option value=\"VILLA
+        SOLDATI\">VILLA SOLDATI</option><option value=\"VILLA URQUIZA\">VILLA URQUIZA</option>\r\n\t\t\t\t\t\t\t</select>\r\n\t\t\t\t\t\t
+        \ </td>\r\n                        </tr>\r\n                        <tr>\r\n
+        \                         <td align=\"right\"><label>\r\n                            <input
+        name=\"Buscar\" type=\"button\" class=\"searchButton\" id=\"Buscar\" value=\"Buscar\"
+        \ onclick=\"buscar('suc')\"/>\r\n                          </label></td>\r\n
+        \                       </tr>\r\n                    </table></td>\r\n                  </tr>\r\n
+        \                 <tr>\r\n                    <td height=\"93\">&nbsp;</td>\r\n
+        \                 </tr>\r\n                  <tr>\r\n                    <td
+        height=\"180\" align=\"center\"><table width=\"80%\" border=\"0\">\r\n                      <tr>\r\n
+        \                       <td align=\"left\"><label>\r\n                          <input
+        id=\"palabraImp\" name=\"palabraImp\" class=\"busqueda\" onfocus=\"this.value='';
+        this.onfocus=null;\" type=\"text\" value=\"Por palabra\" maxlength=\"100\"/>\r\n
+        \                       </label></td>\r\n                      </tr>\r\n                      <tr>\r\n
+        \                       <td align=\"left\"><label>\r\n                        \t<select
+        id=\"rubrosImp\" name=\"rubrosImp\" class=\"combo\" style=\"width: 197px\"
+        onchange=\"javascript:cargoEmpresas();\">\r\n                            \t<option
+        value=\"\" selected=\"selected\">Seleccionar Rubro</option>\r\n \t\t\t\t\t\t\t\t<option
+        value=\"12\">ACCESOS A INTERNET</option><option value=\"20\">ADMINISTRACION
+        DE CONSORCIOS</option><option value=\"35\">ASOCIACIONES SIN FINES DE LUCRO</option><option
+        value=\"1\">AUTOMOTRICES Y PLANES DE AHORRO</option><option value=\"29\">CLUBES</option><option
+        value=\"2\">COLEGIOS, INSTITUTOS Y UNIVERSIDADES</option><option value=\"25\">COMPRAS
+        POR INTERNET</option><option value=\"33\">CONSUMO</option><option value=\"21\">COOPERATIVAS
+        DE LUZ</option><option value=\"3\">COOPERATIVAS DE SERVICIOS</option><option
+        value=\"22\">COOPERATIVAS DE TELECOMUNICACIONES</option><option value=\"4\">COSMETICOS</option><option
+        value=\"26\">FIDEICOMISOS</option><option value=\"5\">FINANCIERAS Y BANCOS</option><option
+        value=\"7\">IMPUESTOS MUNICIPALES</option><option value=\"23\">IMPUESTOS NACIONALES</option><option
+        value=\"24\">IMPUESTOS PROVINCIALES</option><option value=\"999\">INDEFINIDO</option><option
+        value=\"6\">MEDICINAS PREPAGAS</option><option value=\"30\">MUTUALES</option><option
+        value=\"31\">OBRAS SOCIALES</option><option value=\"28\">PRESTAMOS</option><option
+        value=\"34\">RECUPERO DE DEUDA</option><option value=\"8\">SEGURIDAD Y ALARMAS</option><option
+        value=\"9\">SEGUROS</option><option value=\"11\">SERVICIO DE GAS</option><option
+        value=\"10\">SERVICIOS DE AGUA</option><option value=\"13\">SERVICIOS DE LUZ</option><option
+        value=\"27\">SERVICIOS PREPAGOS Y RECARGAS</option><option value=\"15\">TARJETAS
+        DE CREDITO</option><option value=\"16\">TELEFONIA CELULAR</option><option
+        value=\"17\">TELEFONIA FIJA</option><option value=\"32\">TURISMO</option><option
+        value=\"18\">TURISMO ESTUDIANTIL</option><option value=\"14\">TV SATELITAL
+        Y CABLE</option><option value=\"19\">VARIOS</option> \r\n\t\t\t\t\t\t\t</select>\r\n
+        \                       </label></td>\r\n                      </tr>\r\n                      <tr>\r\n
+        \                       <td align=\"left\">\r\n\t                        <select
+        id=\"empresasImp\" name=\"empresasImp\" class=\"combo\" style=\"width: 197px\">\r\n\t\t\t
+        \                   <option value=\"\" selected=\"selected\">Seleccionar Empresa</option>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</select>\r\n\t\t\t\t\t
+        \   </td>\r\n                      </tr>\r\n                      <tr>\r\n
+        \                       <td align=\"left\"><label>\r\n                          <input
+        type=\"button\" class=\"searchButton\" value=\"Buscar\" onclick=\"buscar('emp')\"/>\r\n
+        \                       </label></td>\r\n                      </tr>\r\n                    </table></td>\r\n
+        \                 </tr>\r\n              </table></td>\r\n            </tr>\r\n
+        \         </table>\r\n          <input id=\"listType\" name=\"listType\" type=\"hidden\"
+        value=\"\"/> \r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td
+        align=\"center\" valign=\"top\">\r\n        \r\n        \r\n\t\t\r\n\t\t\r\n\t\t<table
+        width=\"735\" border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td
+        width=\"168\" rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">6469</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">BANCO
+        SUPERVIELLE - 205</td>\r\n          </tr>\r\n          <tr>\r\n            <td
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\">AV LA PLATA 537</td>\r\n          </tr>\r\n
+        \         <tr>\r\n            <td align=\"right\" bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a
+        onclick=\"verDetalle('6469')\" href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n
+        \       </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table width=\"735\"
+        border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td width=\"168\"
+        rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">6471</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">BANCO
+        SUPERVIELLE - 207</td>\r\n          </tr>\r\n          <tr>\r\n            <td
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\">AV GRAL DIAZ VELEZ 3916</td>\r\n
+        \         </tr>\r\n          <tr>\r\n            <td align=\"right\" bgcolor=\"#BCDAE9\"
+        class=\"resultadosText\"><a onclick=\"verDetalle('6471')\" href=\"#\">+ Ver
+        mas</a></td>\r\n          </tr>\r\n        </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table
+        width=\"735\" border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td
+        width=\"168\" rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">5757</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">BANCO
+        SUPERVIELLE - 60</td>\r\n          </tr>\r\n          <tr>\r\n            <td
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\">AV LA PLATA 180</td>\r\n          </tr>\r\n
+        \         <tr>\r\n            <td align=\"right\" bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a
+        onclick=\"verDetalle('5757')\" href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n
+        \       </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table width=\"735\"
+        border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td width=\"168\"
+        rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">10183</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">BERARDI
+        SALVADOR\t</td>\r\n          </tr>\r\n          <tr>\r\n            <td bgcolor=\"#BCDAE9\"
+        class=\"resultadosText\">AV SAN MARTIN  1738</td>\r\n          </tr>\r\n          <tr>\r\n
+        \           <td align=\"right\" bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a
+        onclick=\"verDetalle('10183')\" href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n
+        \       </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table width=\"735\"
+        border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td width=\"168\"
+        rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">6813</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">CARBALLEDA
+        GUSTAVO ADRIAN\t\t </td>\r\n          </tr>\r\n          <tr>\r\n            <td
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\">M BRAVO 7</td>\r\n          </tr>\r\n
+        \         <tr>\r\n            <td align=\"right\" bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a
+        onclick=\"verDetalle('6813')\" href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n
+        \       </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table width=\"735\"
+        border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td width=\"168\"
+        rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">7203</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">CS-COTO
+        ABASTO</td>\r\n          </tr>\r\n          <tr>\r\n            <td bgcolor=\"#BCDAE9\"
+        class=\"resultadosText\">AGÜERO 616</td>\r\n          </tr>\r\n          <tr>\r\n
+        \           <td align=\"right\" bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a
+        onclick=\"verDetalle('7203')\" href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n
+        \       </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n<!--
+        \t\t\t<ul class=\"paginador\"> -->\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t<table
+        border=\"0\" cellspacing=\"0\">\n<tr><td>Pages:</td><td>&nbsp;</td><td><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('1');\" title=\"1\">1&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></td><td>&nbsp;</td><td><a href=\"index?pageNum=2\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('2');\" title=\"2\">2&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=3\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('3');\" title=\"3\">3&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=4\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('4');\" title=\"4\">4&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td></tr></table>\n\r\n<!-- \t\t\t</ul> -->\r\n\t\t
+        \    \r\n          <p>&nbsp;</p></td>\r\n      </tr>\r\n      \r\n      <tr>\r\n
+        \       <td height=\"50\" colspan=\"2\" align=\"center\"><img src=\"rapipago-includes/footer-text.png\"
+        width=\"991\" height=\"12\" /></td>\r\n      </tr>\r\n    </table>\r\n    </form>\r\n
+        \   </td>\r\n  </tr>\r\n</table>\r\n<script type=\"text/javascript\">\r\nswfobject.registerObject(\"FlashID\");\r\n</script>\r\n</body>\r\n</html>\r\n"
+    http_version: '1.1'
+  recorded_at: Mon, 23 Jul 2012 14:30:20 GMT
+- request:
+    method: post
+    uri: http://www.rapipago.com.ar/rapipagoWeb/suc-buscar.htm?pageNum=2
+    body:
+      encoding: UTF-8
+      string: palabraSuc=Por+palabra&provinciaSuc=C&ciudadSuc=ALMAGRO&palabraImp=Por+palabra&rubrosImp=&empresasImp=&listType=
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Mechanize/2.5.1 Ruby/1.9.3p0 (http://github.com/tenderlove/mechanize/)
+      accept-encoding:
+      - gzip,deflate,identity
+      accept-charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      accept-language:
+      - en-us,en;q=0.5
+      host:
+      - www.rapipago.com.ar
+      referer:
+      - !ruby/object:URI::HTTP
+        scheme: http
+        user: 
+        password: 
+        host: www.rapipago.com.ar
+        port: 80
+        path: /rapipagoWeb/suc-buscar.htm
+        query: 
+        opaque: 
+        registry: 
+        fragment: 
+        parser: 
+      content-type:
+      - application/x-www-form-urlencoded
+      content-length:
+      - '112'
+      connection:
+      - keep-alive
+      keep-alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 23 Jul 2012 14:30:09 GMT
+      server:
+      - Apache-Coyote/1.1
+      content-type:
+      - text/html;charset=UTF-8
+      content-language:
+      - en-US
+      keep-alive:
+      - timeout=15, max=100
+      connection:
+      - Keep-Alive
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "\r\n\r\n\r\n\r\n\r\n\r\n \r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD
+        XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=utf-8\" />\r\n<title>.: Rapipago:.</title>\r\n<script
+        type=\"text/javascript\" src=\"rapipago-includes/scripts/jquery-1.4.3.min.js\"></script>\r\n<link
+        href=\"/rapipago-includes/css/styles_rapipago.css\" rel=\"stylesheet\" type=\"text/css\"
+        />\r\n<script type=\"text/javascript\">\r\nfunction cargoCiudades() {\r\n\tvar
+        id = $(\"#provinciaSuc\").find(':selected').val();\r\n\t$('#ciudadSuc').load('consultar-ciudades.htm?provinciaId='+id);\r\n}\r\n\r\nfunction
+        cargoEmpresas() {\r\n\tvar id = $(\"#rubrosImp\").find(':selected').val();\r\n\t\r\n\t$('#empresasImp').load('consultar-empresas.htm?rubroId='+id);\r\n}\r\n\r\nfunction
+        buscar(tipo){\r\n\t var listTypeField = document.getElementsByName('listType');\r\n\t
+        listTypeField.value = tipo;\r\n \t document.forms[0].action = tipo+'-'+\"buscar.htm\";\r\n\t
+        document.forms[0].submit();\r\n\t}\r\n\t\r\nfunction verDetalle(id){\r\n\t
+        var sucursalIdField = document.getElementsByName('sucursalId');\r\n\t sucursalIdField.value
+        = id;\r\n\t document.forms[0].action = \"sucursal-detalle.htm?sucursalId=\"+id;\r\n\t
+        document.forms[0].submit();\r\n\t}\r\n\t\r\nfunction doPage(pageNumber){\r\n\t
+        \ var listTypeField = document.getElementsByName('listType')[0];\r\n\t listTypeField.value
+        = 'doPage';\r\n\t var actionOld = document.forms[0].action;\r\n\t var urlparts
+        = actionOld.split('?')\r\n\t var actionNew = '';\r\n\t \r\n\t if(urlparts[0]
+        != null && urlparts[0] != ''){\r\n\t   actionNew = urlparts[0] + '?pageNum='
+        + pageNumber;\r\n\t }else{\r\n\t   actionNew = document.forms[0].action;\r\n\t
+        }\r\n\r\n\t document.forms[0].action = actionNew;\r\n\t document.forms[0].submit();\r\n\t}\r\n\t\r\n</script>\r\n\r\n\r\n\r\n</head>\r\n\r\n<body>\r\n<table
+        width=\"1192\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\"
+        id=\"backGround\">\r\n  <tr>\r\n    <td>\r\n    <form id=\"form\" action=\"suc-buscar.htm\"
+        method=\"post\">\r\n    <table width=\"1192\"  border=\"0\" align=\"center\"
+        cellpadding=\"0\" cellspacing=\"0\">\r\n      <tr>\r\n        <td height=\"182\"
+        colspan=\"2\" align=\"center\"><object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\"
+        codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0\"
+        width=\"1192\" height=\"182\">\r\n            <param name=\"movie\" value=\"header.swf\"
+        />\r\n            <param name=\"quality\" value=\"high\" />\r\n            <param
+        name=\"wmode\" value=\"transparent\" />\r\n            <embed src=\"rapipago-includes/header.swf\"
+        width=\"1192\" height=\"182\" quality=\"high\" pluginspage=\"http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash\"
+        type=\"application/x-shockwave-flash\" wmode=\"transparent\"></embed>\r\n
+        \       </object></td>\r\n      </tr>\r\n      <tr>\r\n        <td width=\"865\"
+        height=\"120\" align=\"left\"><p><img src=\"rapipago-includes/title-sucursales.png\"
+        width=\"761\" height=\"150\" /></p></td>\r\n        <td width=\"327\" rowspan=\"2\"
+        align=\"center\" valign=\"top\">\r\n          <p>&nbsp;</p>\r\n          <table
+        width=\"284\" height=\"544\" border=\"0\" id=\"backGroundBuscador\">\r\n            <tr>\r\n
+        \             <td valign=\"top\"><table width=\"100%\" border=\"0\">\r\n                  <tr>\r\n
+        \                   <td height=\"83\">&nbsp;</td>\r\n                  </tr>\r\n
+        \                 <tr>\r\n                    <td height=\"167\" align=\"center\"><table
+        width=\"80%\" border=\"0\">\r\n                        <tr>\r\n                          <td
+        align=\"left\"><label>\r\n                            <input id=\"palabraSuc\"
+        name=\"palabraSuc\" class=\"busqueda\" onfocus=\"this.value=''; this.onfocus=null;\"
+        type=\"text\" value=\"Por palabra\" maxlength=\"100\"/>\r\n                          </label></td>\r\n
+        \                       </tr>\r\n                        <tr>\r\n                          <td
+        align=\"left\"><label>\r\n                            <select id=\"provinciaSuc\"
+        name=\"provinciaSuc\" class=\"combo\" style=\"width: 197px\" onchange=\"javascript:cargoCiudades();\">\r\n
+        \                             \t<option value=\"\">Seleccionar Provincia</option>\r\n\t\t\t\t\t\t\t\t<option
+        value=\"B\">BUENOS AIRES</option><option value=\"C\" selected=\"selected\">CAPITAL
+        FEDERAL</option><option value=\"K\">CATAMARCA</option><option value=\"H\">CHACO</option><option
+        value=\"U\">CHUBUT</option><option value=\"X\">CORDOBA</option><option value=\"W\">CORRIENTES</option><option
+        value=\"E\">ENTRE RIOS</option><option value=\"I\">EXTRANJERA</option><option
+        value=\"P\">FORMOSA</option><option value=\"Y\">JUJUY</option><option value=\"L\">LA
+        PAMPA</option><option value=\"F\">LA RIOJA</option><option value=\"M\">MENDOZA</option><option
+        value=\"N\">MISIONES</option><option value=\"Q\">NEUQUEN</option><option value=\"R\">RIO
+        NEGRO</option><option value=\"A\">SALTA</option><option value=\"J\">SAN JUAN</option><option
+        value=\"D\">SAN LUIS</option><option value=\"Z\">SANTA CRUZ</option><option
+        value=\"S\">SANTA FE</option><option value=\"G\">SANTIAGO DEL ESTERO</option><option
+        value=\"V\">TIERRA DEL FUEGO</option><option value=\"T\">TUCUMAN</option>\r\n\t\t\t\t\t\t\t</select>\r\n
+        \                         </label></td>\r\n                        </tr>\r\n
+        \                       <tr>\r\n                          <td align=\"left\">\r\n
+        \                           <select id=\"ciudadSuc\" name=\"ciudadSuc\" class=\"combo\"
+        style=\"width: 197px\">\r\n\t\t\t\t\t\t\t\t<option value=\"\">Seleccionar
+        Ciudad</option>\r\n\t\t\t\t\t\t\t\t<option value=\"AGRONOMIA\">AGRONOMIA</option><option
+        value=\"ALMAGRO\" selected=\"selected\">ALMAGRO</option><option value=\"BALVANERA\">BALVANERA</option><option
+        value=\"BARRACAS\">BARRACAS</option><option value=\"BELGRANO\">BELGRANO</option><option
+        value=\"BOEDO\">BOEDO</option><option value=\"CABALLITO\">CABALLITO</option><option
+        value=\"CHACARITA\">CHACARITA</option><option value=\"CIUDAD AUTONOMA BUENOS
+        AIRES\">CIUDAD AUTONOMA BUENOS AIRES</option><option value=\"COLEGIALES\">COLEGIALES</option><option
+        value=\"CONSTITUCION\">CONSTITUCION</option><option value=\"FLORES\">FLORES</option><option
+        value=\"FLORESTA\">FLORESTA</option><option value=\"LA BOCA\">LA BOCA</option><option
+        value=\"LINIERS\">LINIERS</option><option value=\"MATADEROS\">MATADEROS</option><option
+        value=\"MONSERRAT\">MONSERRAT</option><option value=\"MONTE CASTRO\">MONTE
+        CASTRO</option><option value=\"NUEVA POMPEYA\">NUEVA POMPEYA</option><option
+        value=\"NU&Ntilde;EZ\">NU&Ntilde;EZ</option><option value=\"PALERMO\">PALERMO</option><option
+        value=\"PARQUE AVELLANEDA\">PARQUE AVELLANEDA</option><option value=\"PARQUE
+        CHACABUCO\">PARQUE CHACABUCO</option><option value=\"PARQUE PATRICIOS\">PARQUE
+        PATRICIOS</option><option value=\"PATERNAL\">PATERNAL</option><option value=\"RECOLETA\">RECOLETA</option><option
+        value=\"RETIRO\">RETIRO</option><option value=\"SAAVEDRA\">SAAVEDRA</option><option
+        value=\"SAN CRISTOBAL\">SAN CRISTOBAL</option><option value=\"SAN NICOLAS\">SAN
+        NICOLAS</option><option value=\"SAN TELMO\">SAN TELMO</option><option value=\"VELEZ
+        SARSFIELD\">VELEZ SARSFIELD</option><option value=\"VILLA CRESPO\">VILLA CRESPO</option><option
+        value=\"VILLA DEL PARQUE\">VILLA DEL PARQUE</option><option value=\"VILLA
+        DEVOTO\">VILLA DEVOTO</option><option value=\"VILLA GENERAL MITRE\">VILLA
+        GENERAL MITRE</option><option value=\"VILLA LUGANO\">VILLA LUGANO</option><option
+        value=\"VILLA LURO\">VILLA LURO</option><option value=\"VILLA PUEYRREDON\">VILLA
+        PUEYRREDON</option><option value=\"VILLA RIACHUELO\">VILLA RIACHUELO</option><option
+        value=\"VILLA SANTA RITA\">VILLA SANTA RITA</option><option value=\"VILLA
+        SOLDATI\">VILLA SOLDATI</option><option value=\"VILLA URQUIZA\">VILLA URQUIZA</option>\r\n\t\t\t\t\t\t\t</select>\r\n\t\t\t\t\t\t
+        \ </td>\r\n                        </tr>\r\n                        <tr>\r\n
+        \                         <td align=\"right\"><label>\r\n                            <input
+        name=\"Buscar\" type=\"button\" class=\"searchButton\" id=\"Buscar\" value=\"Buscar\"
+        \ onclick=\"buscar('suc')\"/>\r\n                          </label></td>\r\n
+        \                       </tr>\r\n                    </table></td>\r\n                  </tr>\r\n
+        \                 <tr>\r\n                    <td height=\"93\">&nbsp;</td>\r\n
+        \                 </tr>\r\n                  <tr>\r\n                    <td
+        height=\"180\" align=\"center\"><table width=\"80%\" border=\"0\">\r\n                      <tr>\r\n
+        \                       <td align=\"left\"><label>\r\n                          <input
+        id=\"palabraImp\" name=\"palabraImp\" class=\"busqueda\" onfocus=\"this.value='';
+        this.onfocus=null;\" type=\"text\" value=\"Por palabra\" maxlength=\"100\"/>\r\n
+        \                       </label></td>\r\n                      </tr>\r\n                      <tr>\r\n
+        \                       <td align=\"left\"><label>\r\n                        \t<select
+        id=\"rubrosImp\" name=\"rubrosImp\" class=\"combo\" style=\"width: 197px\"
+        onchange=\"javascript:cargoEmpresas();\">\r\n                            \t<option
+        value=\"\" selected=\"selected\">Seleccionar Rubro</option>\r\n \t\t\t\t\t\t\t\t<option
+        value=\"12\">ACCESOS A INTERNET</option><option value=\"20\">ADMINISTRACION
+        DE CONSORCIOS</option><option value=\"35\">ASOCIACIONES SIN FINES DE LUCRO</option><option
+        value=\"1\">AUTOMOTRICES Y PLANES DE AHORRO</option><option value=\"29\">CLUBES</option><option
+        value=\"2\">COLEGIOS, INSTITUTOS Y UNIVERSIDADES</option><option value=\"25\">COMPRAS
+        POR INTERNET</option><option value=\"33\">CONSUMO</option><option value=\"21\">COOPERATIVAS
+        DE LUZ</option><option value=\"3\">COOPERATIVAS DE SERVICIOS</option><option
+        value=\"22\">COOPERATIVAS DE TELECOMUNICACIONES</option><option value=\"4\">COSMETICOS</option><option
+        value=\"26\">FIDEICOMISOS</option><option value=\"5\">FINANCIERAS Y BANCOS</option><option
+        value=\"7\">IMPUESTOS MUNICIPALES</option><option value=\"23\">IMPUESTOS NACIONALES</option><option
+        value=\"24\">IMPUESTOS PROVINCIALES</option><option value=\"999\">INDEFINIDO</option><option
+        value=\"6\">MEDICINAS PREPAGAS</option><option value=\"30\">MUTUALES</option><option
+        value=\"31\">OBRAS SOCIALES</option><option value=\"28\">PRESTAMOS</option><option
+        value=\"34\">RECUPERO DE DEUDA</option><option value=\"8\">SEGURIDAD Y ALARMAS</option><option
+        value=\"9\">SEGUROS</option><option value=\"11\">SERVICIO DE GAS</option><option
+        value=\"10\">SERVICIOS DE AGUA</option><option value=\"13\">SERVICIOS DE LUZ</option><option
+        value=\"27\">SERVICIOS PREPAGOS Y RECARGAS</option><option value=\"15\">TARJETAS
+        DE CREDITO</option><option value=\"16\">TELEFONIA CELULAR</option><option
+        value=\"17\">TELEFONIA FIJA</option><option value=\"32\">TURISMO</option><option
+        value=\"18\">TURISMO ESTUDIANTIL</option><option value=\"14\">TV SATELITAL
+        Y CABLE</option><option value=\"19\">VARIOS</option> \r\n\t\t\t\t\t\t\t</select>\r\n
+        \                       </label></td>\r\n                      </tr>\r\n                      <tr>\r\n
+        \                       <td align=\"left\">\r\n\t                        <select
+        id=\"empresasImp\" name=\"empresasImp\" class=\"combo\" style=\"width: 197px\">\r\n\t\t\t
+        \                   <option value=\"\" selected=\"selected\">Seleccionar Empresa</option>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</select>\r\n\t\t\t\t\t
+        \   </td>\r\n                      </tr>\r\n                      <tr>\r\n
+        \                       <td align=\"left\"><label>\r\n                          <input
+        type=\"button\" class=\"searchButton\" value=\"Buscar\" onclick=\"buscar('emp')\"/>\r\n
+        \                       </label></td>\r\n                      </tr>\r\n                    </table></td>\r\n
+        \                 </tr>\r\n              </table></td>\r\n            </tr>\r\n
+        \         </table>\r\n          <input id=\"listType\" name=\"listType\" type=\"hidden\"
+        value=\"\"/> \r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td
+        align=\"center\" valign=\"top\">\r\n        \r\n        \r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table
+        width=\"735\" border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td
+        width=\"168\" rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">4624</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">EDESUR
+        - ATM 910</td>\r\n          </tr>\r\n          <tr>\r\n            <td bgcolor=\"#BCDAE9\"
+        class=\"resultadosText\">Senillosa 1833</td>\r\n          </tr>\r\n          <tr>\r\n
+        \           <td align=\"right\" bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a
+        onclick=\"verDetalle('4624')\" href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n
+        \       </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table width=\"735\"
+        border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td width=\"168\"
+        rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">8032</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">EDESUR
+        OFICINA COMERCIAL CENTENARIO</td>\r\n          </tr>\r\n          <tr>\r\n
+        \           <td bgcolor=\"#BCDAE9\" class=\"resultadosText\">AV A GALLARDO
+        34</td>\r\n          </tr>\r\n          <tr>\r\n            <td align=\"right\"
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a onclick=\"verDetalle('8032')\"
+        href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n        </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table
+        width=\"735\" border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td
+        width=\"168\" rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">5818</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">EDM
+        CENTER</td>\r\n          </tr>\r\n          <tr>\r\n            <td bgcolor=\"#BCDAE9\"
+        class=\"resultadosText\">AV B RIVADAVIA 4225</td>\r\n          </tr>\r\n          <tr>\r\n
+        \           <td align=\"right\" bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a
+        onclick=\"verDetalle('5818')\" href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n
+        \       </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table width=\"735\"
+        border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td width=\"168\"
+        rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">4584</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">LANIADO
+        DIEGO ARIEL\t\t </td>\r\n          </tr>\r\n          <tr>\r\n            <td
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\">AV. BELGRANO  3437</td>\r\n          </tr>\r\n
+        \         <tr>\r\n            <td align=\"right\" bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a
+        onclick=\"verDetalle('4584')\" href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n
+        \       </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table width=\"735\"
+        border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td width=\"168\"
+        rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">2629</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">LANIADO
+        RAUL HECTOR</td>\r\n          </tr>\r\n          <tr>\r\n            <td bgcolor=\"#BCDAE9\"
+        class=\"resultadosText\">MEDRANO 405</td>\r\n          </tr>\r\n          <tr>\r\n
+        \           <td align=\"right\" bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a
+        onclick=\"verDetalle('2629')\" href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n
+        \       </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table width=\"735\"
+        border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td width=\"168\"
+        rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">3973</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">MANDRAQUE</td>\r\n
+        \         </tr>\r\n          <tr>\r\n            <td bgcolor=\"#BCDAE9\" class=\"resultadosText\">PTE
+        H YRIGOYEN 4253</td>\r\n          </tr>\r\n          <tr>\r\n            <td
+        align=\"right\" bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a onclick=\"verDetalle('3973')\"
+        href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n        </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n<!--
+        \t\t\t<ul class=\"paginador\"> -->\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t<table
+        border=\"0\" cellspacing=\"0\">\n<tr><td>Pages:</td><td>&nbsp;</td><td><a
+        href=\"index?pageNum=1\"><!-- \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('1');\"
+        title=\"1\">1&nbsp;</a>\r\n<!-- \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('2');\" title=\"2\">2&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></td><td>&nbsp;</td><td><a href=\"index?pageNum=3\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('3');\" title=\"3\">3&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a href=\"index?pageNum=4\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('4');\" title=\"4\">4&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td></tr></table>\n\r\n<!-- \t\t\t</ul> -->\r\n\t\t
+        \    \r\n          <p>&nbsp;</p></td>\r\n      </tr>\r\n      \r\n      <tr>\r\n
+        \       <td height=\"50\" colspan=\"2\" align=\"center\"><img src=\"rapipago-includes/footer-text.png\"
+        width=\"991\" height=\"12\" /></td>\r\n      </tr>\r\n    </table>\r\n    </form>\r\n
+        \   </td>\r\n  </tr>\r\n</table>\r\n<script type=\"text/javascript\">\r\nswfobject.registerObject(\"FlashID\");\r\n</script>\r\n</body>\r\n</html>\r\n"
+    http_version: '1.1'
+  recorded_at: Mon, 23 Jul 2012 14:30:20 GMT
+- request:
+    method: post
+    uri: http://www.rapipago.com.ar/rapipagoWeb/suc-buscar.htm?pageNum=3
+    body:
+      encoding: UTF-8
+      string: palabraSuc=Por+palabra&provinciaSuc=C&ciudadSuc=ALMAGRO&palabraImp=Por+palabra&rubrosImp=&empresasImp=&listType=
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Mechanize/2.5.1 Ruby/1.9.3p0 (http://github.com/tenderlove/mechanize/)
+      accept-encoding:
+      - gzip,deflate,identity
+      accept-charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      accept-language:
+      - en-us,en;q=0.5
+      host:
+      - www.rapipago.com.ar
+      referer:
+      - !ruby/object:URI::HTTP
+        scheme: http
+        user: 
+        password: 
+        host: www.rapipago.com.ar
+        port: 80
+        path: /rapipagoWeb/suc-buscar.htm
+        query: pageNum=2
+        opaque: 
+        registry: 
+        fragment: 
+        parser: 
+      content-type:
+      - application/x-www-form-urlencoded
+      content-length:
+      - '112'
+      connection:
+      - keep-alive
+      keep-alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 23 Jul 2012 14:30:09 GMT
+      server:
+      - Apache-Coyote/1.1
+      content-type:
+      - text/html;charset=UTF-8
+      content-language:
+      - en-US
+      keep-alive:
+      - timeout=15, max=100
+      connection:
+      - Keep-Alive
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "\r\n\r\n\r\n\r\n\r\n\r\n \r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD
+        XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=utf-8\" />\r\n<title>.: Rapipago:.</title>\r\n<script
+        type=\"text/javascript\" src=\"rapipago-includes/scripts/jquery-1.4.3.min.js\"></script>\r\n<link
+        href=\"/rapipago-includes/css/styles_rapipago.css\" rel=\"stylesheet\" type=\"text/css\"
+        />\r\n<script type=\"text/javascript\">\r\nfunction cargoCiudades() {\r\n\tvar
+        id = $(\"#provinciaSuc\").find(':selected').val();\r\n\t$('#ciudadSuc').load('consultar-ciudades.htm?provinciaId='+id);\r\n}\r\n\r\nfunction
+        cargoEmpresas() {\r\n\tvar id = $(\"#rubrosImp\").find(':selected').val();\r\n\t\r\n\t$('#empresasImp').load('consultar-empresas.htm?rubroId='+id);\r\n}\r\n\r\nfunction
+        buscar(tipo){\r\n\t var listTypeField = document.getElementsByName('listType');\r\n\t
+        listTypeField.value = tipo;\r\n \t document.forms[0].action = tipo+'-'+\"buscar.htm\";\r\n\t
+        document.forms[0].submit();\r\n\t}\r\n\t\r\nfunction verDetalle(id){\r\n\t
+        var sucursalIdField = document.getElementsByName('sucursalId');\r\n\t sucursalIdField.value
+        = id;\r\n\t document.forms[0].action = \"sucursal-detalle.htm?sucursalId=\"+id;\r\n\t
+        document.forms[0].submit();\r\n\t}\r\n\t\r\nfunction doPage(pageNumber){\r\n\t
+        \ var listTypeField = document.getElementsByName('listType')[0];\r\n\t listTypeField.value
+        = 'doPage';\r\n\t var actionOld = document.forms[0].action;\r\n\t var urlparts
+        = actionOld.split('?')\r\n\t var actionNew = '';\r\n\t \r\n\t if(urlparts[0]
+        != null && urlparts[0] != ''){\r\n\t   actionNew = urlparts[0] + '?pageNum='
+        + pageNumber;\r\n\t }else{\r\n\t   actionNew = document.forms[0].action;\r\n\t
+        }\r\n\r\n\t document.forms[0].action = actionNew;\r\n\t document.forms[0].submit();\r\n\t}\r\n\t\r\n</script>\r\n\r\n\r\n\r\n</head>\r\n\r\n<body>\r\n<table
+        width=\"1192\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\"
+        id=\"backGround\">\r\n  <tr>\r\n    <td>\r\n    <form id=\"form\" action=\"suc-buscar.htm\"
+        method=\"post\">\r\n    <table width=\"1192\"  border=\"0\" align=\"center\"
+        cellpadding=\"0\" cellspacing=\"0\">\r\n      <tr>\r\n        <td height=\"182\"
+        colspan=\"2\" align=\"center\"><object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\"
+        codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0\"
+        width=\"1192\" height=\"182\">\r\n            <param name=\"movie\" value=\"header.swf\"
+        />\r\n            <param name=\"quality\" value=\"high\" />\r\n            <param
+        name=\"wmode\" value=\"transparent\" />\r\n            <embed src=\"rapipago-includes/header.swf\"
+        width=\"1192\" height=\"182\" quality=\"high\" pluginspage=\"http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash\"
+        type=\"application/x-shockwave-flash\" wmode=\"transparent\"></embed>\r\n
+        \       </object></td>\r\n      </tr>\r\n      <tr>\r\n        <td width=\"865\"
+        height=\"120\" align=\"left\"><p><img src=\"rapipago-includes/title-sucursales.png\"
+        width=\"761\" height=\"150\" /></p></td>\r\n        <td width=\"327\" rowspan=\"2\"
+        align=\"center\" valign=\"top\">\r\n          <p>&nbsp;</p>\r\n          <table
+        width=\"284\" height=\"544\" border=\"0\" id=\"backGroundBuscador\">\r\n            <tr>\r\n
+        \             <td valign=\"top\"><table width=\"100%\" border=\"0\">\r\n                  <tr>\r\n
+        \                   <td height=\"83\">&nbsp;</td>\r\n                  </tr>\r\n
+        \                 <tr>\r\n                    <td height=\"167\" align=\"center\"><table
+        width=\"80%\" border=\"0\">\r\n                        <tr>\r\n                          <td
+        align=\"left\"><label>\r\n                            <input id=\"palabraSuc\"
+        name=\"palabraSuc\" class=\"busqueda\" onfocus=\"this.value=''; this.onfocus=null;\"
+        type=\"text\" value=\"Por palabra\" maxlength=\"100\"/>\r\n                          </label></td>\r\n
+        \                       </tr>\r\n                        <tr>\r\n                          <td
+        align=\"left\"><label>\r\n                            <select id=\"provinciaSuc\"
+        name=\"provinciaSuc\" class=\"combo\" style=\"width: 197px\" onchange=\"javascript:cargoCiudades();\">\r\n
+        \                             \t<option value=\"\">Seleccionar Provincia</option>\r\n\t\t\t\t\t\t\t\t<option
+        value=\"B\">BUENOS AIRES</option><option value=\"C\" selected=\"selected\">CAPITAL
+        FEDERAL</option><option value=\"K\">CATAMARCA</option><option value=\"H\">CHACO</option><option
+        value=\"U\">CHUBUT</option><option value=\"X\">CORDOBA</option><option value=\"W\">CORRIENTES</option><option
+        value=\"E\">ENTRE RIOS</option><option value=\"I\">EXTRANJERA</option><option
+        value=\"P\">FORMOSA</option><option value=\"Y\">JUJUY</option><option value=\"L\">LA
+        PAMPA</option><option value=\"F\">LA RIOJA</option><option value=\"M\">MENDOZA</option><option
+        value=\"N\">MISIONES</option><option value=\"Q\">NEUQUEN</option><option value=\"R\">RIO
+        NEGRO</option><option value=\"A\">SALTA</option><option value=\"J\">SAN JUAN</option><option
+        value=\"D\">SAN LUIS</option><option value=\"Z\">SANTA CRUZ</option><option
+        value=\"S\">SANTA FE</option><option value=\"G\">SANTIAGO DEL ESTERO</option><option
+        value=\"V\">TIERRA DEL FUEGO</option><option value=\"T\">TUCUMAN</option>\r\n\t\t\t\t\t\t\t</select>\r\n
+        \                         </label></td>\r\n                        </tr>\r\n
+        \                       <tr>\r\n                          <td align=\"left\">\r\n
+        \                           <select id=\"ciudadSuc\" name=\"ciudadSuc\" class=\"combo\"
+        style=\"width: 197px\">\r\n\t\t\t\t\t\t\t\t<option value=\"\">Seleccionar
+        Ciudad</option>\r\n\t\t\t\t\t\t\t\t<option value=\"AGRONOMIA\">AGRONOMIA</option><option
+        value=\"ALMAGRO\" selected=\"selected\">ALMAGRO</option><option value=\"BALVANERA\">BALVANERA</option><option
+        value=\"BARRACAS\">BARRACAS</option><option value=\"BELGRANO\">BELGRANO</option><option
+        value=\"BOEDO\">BOEDO</option><option value=\"CABALLITO\">CABALLITO</option><option
+        value=\"CHACARITA\">CHACARITA</option><option value=\"CIUDAD AUTONOMA BUENOS
+        AIRES\">CIUDAD AUTONOMA BUENOS AIRES</option><option value=\"COLEGIALES\">COLEGIALES</option><option
+        value=\"CONSTITUCION\">CONSTITUCION</option><option value=\"FLORES\">FLORES</option><option
+        value=\"FLORESTA\">FLORESTA</option><option value=\"LA BOCA\">LA BOCA</option><option
+        value=\"LINIERS\">LINIERS</option><option value=\"MATADEROS\">MATADEROS</option><option
+        value=\"MONSERRAT\">MONSERRAT</option><option value=\"MONTE CASTRO\">MONTE
+        CASTRO</option><option value=\"NUEVA POMPEYA\">NUEVA POMPEYA</option><option
+        value=\"NU&Ntilde;EZ\">NU&Ntilde;EZ</option><option value=\"PALERMO\">PALERMO</option><option
+        value=\"PARQUE AVELLANEDA\">PARQUE AVELLANEDA</option><option value=\"PARQUE
+        CHACABUCO\">PARQUE CHACABUCO</option><option value=\"PARQUE PATRICIOS\">PARQUE
+        PATRICIOS</option><option value=\"PATERNAL\">PATERNAL</option><option value=\"RECOLETA\">RECOLETA</option><option
+        value=\"RETIRO\">RETIRO</option><option value=\"SAAVEDRA\">SAAVEDRA</option><option
+        value=\"SAN CRISTOBAL\">SAN CRISTOBAL</option><option value=\"SAN NICOLAS\">SAN
+        NICOLAS</option><option value=\"SAN TELMO\">SAN TELMO</option><option value=\"VELEZ
+        SARSFIELD\">VELEZ SARSFIELD</option><option value=\"VILLA CRESPO\">VILLA CRESPO</option><option
+        value=\"VILLA DEL PARQUE\">VILLA DEL PARQUE</option><option value=\"VILLA
+        DEVOTO\">VILLA DEVOTO</option><option value=\"VILLA GENERAL MITRE\">VILLA
+        GENERAL MITRE</option><option value=\"VILLA LUGANO\">VILLA LUGANO</option><option
+        value=\"VILLA LURO\">VILLA LURO</option><option value=\"VILLA PUEYRREDON\">VILLA
+        PUEYRREDON</option><option value=\"VILLA RIACHUELO\">VILLA RIACHUELO</option><option
+        value=\"VILLA SANTA RITA\">VILLA SANTA RITA</option><option value=\"VILLA
+        SOLDATI\">VILLA SOLDATI</option><option value=\"VILLA URQUIZA\">VILLA URQUIZA</option>\r\n\t\t\t\t\t\t\t</select>\r\n\t\t\t\t\t\t
+        \ </td>\r\n                        </tr>\r\n                        <tr>\r\n
+        \                         <td align=\"right\"><label>\r\n                            <input
+        name=\"Buscar\" type=\"button\" class=\"searchButton\" id=\"Buscar\" value=\"Buscar\"
+        \ onclick=\"buscar('suc')\"/>\r\n                          </label></td>\r\n
+        \                       </tr>\r\n                    </table></td>\r\n                  </tr>\r\n
+        \                 <tr>\r\n                    <td height=\"93\">&nbsp;</td>\r\n
+        \                 </tr>\r\n                  <tr>\r\n                    <td
+        height=\"180\" align=\"center\"><table width=\"80%\" border=\"0\">\r\n                      <tr>\r\n
+        \                       <td align=\"left\"><label>\r\n                          <input
+        id=\"palabraImp\" name=\"palabraImp\" class=\"busqueda\" onfocus=\"this.value='';
+        this.onfocus=null;\" type=\"text\" value=\"Por palabra\" maxlength=\"100\"/>\r\n
+        \                       </label></td>\r\n                      </tr>\r\n                      <tr>\r\n
+        \                       <td align=\"left\"><label>\r\n                        \t<select
+        id=\"rubrosImp\" name=\"rubrosImp\" class=\"combo\" style=\"width: 197px\"
+        onchange=\"javascript:cargoEmpresas();\">\r\n                            \t<option
+        value=\"\" selected=\"selected\">Seleccionar Rubro</option>\r\n \t\t\t\t\t\t\t\t<option
+        value=\"12\">ACCESOS A INTERNET</option><option value=\"20\">ADMINISTRACION
+        DE CONSORCIOS</option><option value=\"35\">ASOCIACIONES SIN FINES DE LUCRO</option><option
+        value=\"1\">AUTOMOTRICES Y PLANES DE AHORRO</option><option value=\"29\">CLUBES</option><option
+        value=\"2\">COLEGIOS, INSTITUTOS Y UNIVERSIDADES</option><option value=\"25\">COMPRAS
+        POR INTERNET</option><option value=\"33\">CONSUMO</option><option value=\"21\">COOPERATIVAS
+        DE LUZ</option><option value=\"3\">COOPERATIVAS DE SERVICIOS</option><option
+        value=\"22\">COOPERATIVAS DE TELECOMUNICACIONES</option><option value=\"4\">COSMETICOS</option><option
+        value=\"26\">FIDEICOMISOS</option><option value=\"5\">FINANCIERAS Y BANCOS</option><option
+        value=\"7\">IMPUESTOS MUNICIPALES</option><option value=\"23\">IMPUESTOS NACIONALES</option><option
+        value=\"24\">IMPUESTOS PROVINCIALES</option><option value=\"999\">INDEFINIDO</option><option
+        value=\"6\">MEDICINAS PREPAGAS</option><option value=\"30\">MUTUALES</option><option
+        value=\"31\">OBRAS SOCIALES</option><option value=\"28\">PRESTAMOS</option><option
+        value=\"34\">RECUPERO DE DEUDA</option><option value=\"8\">SEGURIDAD Y ALARMAS</option><option
+        value=\"9\">SEGUROS</option><option value=\"11\">SERVICIO DE GAS</option><option
+        value=\"10\">SERVICIOS DE AGUA</option><option value=\"13\">SERVICIOS DE LUZ</option><option
+        value=\"27\">SERVICIOS PREPAGOS Y RECARGAS</option><option value=\"15\">TARJETAS
+        DE CREDITO</option><option value=\"16\">TELEFONIA CELULAR</option><option
+        value=\"17\">TELEFONIA FIJA</option><option value=\"32\">TURISMO</option><option
+        value=\"18\">TURISMO ESTUDIANTIL</option><option value=\"14\">TV SATELITAL
+        Y CABLE</option><option value=\"19\">VARIOS</option> \r\n\t\t\t\t\t\t\t</select>\r\n
+        \                       </label></td>\r\n                      </tr>\r\n                      <tr>\r\n
+        \                       <td align=\"left\">\r\n\t                        <select
+        id=\"empresasImp\" name=\"empresasImp\" class=\"combo\" style=\"width: 197px\">\r\n\t\t\t
+        \                   <option value=\"\" selected=\"selected\">Seleccionar Empresa</option>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</select>\r\n\t\t\t\t\t
+        \   </td>\r\n                      </tr>\r\n                      <tr>\r\n
+        \                       <td align=\"left\"><label>\r\n                          <input
+        type=\"button\" class=\"searchButton\" value=\"Buscar\" onclick=\"buscar('emp')\"/>\r\n
+        \                       </label></td>\r\n                      </tr>\r\n                    </table></td>\r\n
+        \                 </tr>\r\n              </table></td>\r\n            </tr>\r\n
+        \         </table>\r\n          <input id=\"listType\" name=\"listType\" type=\"hidden\"
+        value=\"\"/> \r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td
+        align=\"center\" valign=\"top\">\r\n        \r\n        \r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table
+        width=\"735\" border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td
+        width=\"168\" rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">3782</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">MERIDA
+        GUTIERREZ ADELA \t\t </td>\r\n          </tr>\r\n          <tr>\r\n            <td
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\">PALESTINA\t\t  884</td>\r\n          </tr>\r\n
+        \         <tr>\r\n            <td align=\"right\" bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a
+        onclick=\"verDetalle('3782')\" href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n
+        \       </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table width=\"735\"
+        border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td width=\"168\"
+        rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">10064</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">RESQUIN
+        RAMIREZ FERNANDO LUIS\t\t </td>\r\n          </tr>\r\n          <tr>\r\n            <td
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\">BILLINGHURST  429</td>\r\n          </tr>\r\n
+        \         <tr>\r\n            <td align=\"right\" bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a
+        onclick=\"verDetalle('10064')\" href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n
+        \       </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table width=\"735\"
+        border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td width=\"168\"
+        rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">2305</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">ROFCHUC
+        LEANDRO \t\t </td>\r\n          </tr>\r\n          <tr>\r\n            <td
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\">AV. CORRIENTES  3802</td>\r\n
+        \         </tr>\r\n          <tr>\r\n            <td align=\"right\" bgcolor=\"#BCDAE9\"
+        class=\"resultadosText\"><a onclick=\"verDetalle('2305')\" href=\"#\">+ Ver
+        mas</a></td>\r\n          </tr>\r\n        </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table
+        width=\"735\" border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td
+        width=\"168\" rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">7307</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">STROBINO
+        MARIA CRISTINA\t\t </td>\r\n          </tr>\r\n          <tr>\r\n            <td
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\">CATRO BARROS\t\t  110</td>\r\n
+        \         </tr>\r\n          <tr>\r\n            <td align=\"right\" bgcolor=\"#BCDAE9\"
+        class=\"resultadosText\"><a onclick=\"verDetalle('7307')\" href=\"#\">+ Ver
+        mas</a></td>\r\n          </tr>\r\n        </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table
+        width=\"735\" border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td
+        width=\"168\" rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">1935</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">SUPERVIELLE
+        205</td>\r\n          </tr>\r\n          <tr>\r\n            <td bgcolor=\"#BCDAE9\"
+        class=\"resultadosText\">AV LA PLATA 430</td>\r\n          </tr>\r\n          <tr>\r\n
+        \           <td align=\"right\" bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a
+        onclick=\"verDetalle('1935')\" href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n
+        \       </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table width=\"735\"
+        border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td width=\"168\"
+        rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">1937</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">SUPERVIELLE
+        207</td>\r\n          </tr>\r\n          <tr>\r\n            <td bgcolor=\"#BCDAE9\"
+        class=\"resultadosText\">AV GRAL DIAZ VELEZ 3916</td>\r\n          </tr>\r\n
+        \         <tr>\r\n            <td align=\"right\" bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a
+        onclick=\"verDetalle('1937')\" href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n
+        \       </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n<!--
+        \t\t\t<ul class=\"paginador\"> -->\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t<table
+        border=\"0\" cellspacing=\"0\">\n<tr><td>Pages:</td><td>&nbsp;</td><td><a
+        href=\"index?pageNum=1\"><!-- \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('1');\"
+        title=\"1\">1&nbsp;</a>\r\n<!-- \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a
+        href=\"index?pageNum=2\"><!-- \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('2');\"
+        title=\"2\">2&nbsp;</a>\r\n<!-- \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('3');\" title=\"3\">3&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></td><td>&nbsp;</td><td><a href=\"index?pageNum=4\"><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('4');\" title=\"4\">4&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></a></td></tr></table>\n\r\n<!-- \t\t\t</ul> -->\r\n\t\t
+        \    \r\n          <p>&nbsp;</p></td>\r\n      </tr>\r\n      \r\n      <tr>\r\n
+        \       <td height=\"50\" colspan=\"2\" align=\"center\"><img src=\"rapipago-includes/footer-text.png\"
+        width=\"991\" height=\"12\" /></td>\r\n      </tr>\r\n    </table>\r\n    </form>\r\n
+        \   </td>\r\n  </tr>\r\n</table>\r\n<script type=\"text/javascript\">\r\nswfobject.registerObject(\"FlashID\");\r\n</script>\r\n</body>\r\n</html>\r\n"
+    http_version: '1.1'
+  recorded_at: Mon, 23 Jul 2012 14:30:21 GMT
+- request:
+    method: post
+    uri: http://www.rapipago.com.ar/rapipagoWeb/suc-buscar.htm?pageNum=4
+    body:
+      encoding: UTF-8
+      string: palabraSuc=Por+palabra&provinciaSuc=C&ciudadSuc=ALMAGRO&palabraImp=Por+palabra&rubrosImp=&empresasImp=&listType=
+    headers:
+      accept:
+      - ! '*/*'
+      user-agent:
+      - Mechanize/2.5.1 Ruby/1.9.3p0 (http://github.com/tenderlove/mechanize/)
+      accept-encoding:
+      - gzip,deflate,identity
+      accept-charset:
+      - ISO-8859-1,utf-8;q=0.7,*;q=0.7
+      accept-language:
+      - en-us,en;q=0.5
+      host:
+      - www.rapipago.com.ar
+      referer:
+      - !ruby/object:URI::HTTP
+        scheme: http
+        user: 
+        password: 
+        host: www.rapipago.com.ar
+        port: 80
+        path: /rapipagoWeb/suc-buscar.htm
+        query: pageNum=3
+        opaque: 
+        registry: 
+        fragment: 
+        parser: 
+      content-type:
+      - application/x-www-form-urlencoded
+      content-length:
+      - '112'
+      connection:
+      - keep-alive
+      keep-alive:
+      - 300
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 23 Jul 2012 14:30:10 GMT
+      server:
+      - Apache-Coyote/1.1
+      content-type:
+      - text/html;charset=UTF-8
+      content-language:
+      - en-US
+      keep-alive:
+      - timeout=15, max=100
+      connection:
+      - Keep-Alive
+      transfer-encoding:
+      - chunked
+    body:
+      encoding: US-ASCII
+      string: ! "\r\n\r\n\r\n\r\n\r\n\r\n \r\n\r\n<!DOCTYPE html PUBLIC \"-//W3C//DTD
+        XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\r\n<html
+        xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\"
+        content=\"text/html; charset=utf-8\" />\r\n<title>.: Rapipago:.</title>\r\n<script
+        type=\"text/javascript\" src=\"rapipago-includes/scripts/jquery-1.4.3.min.js\"></script>\r\n<link
+        href=\"/rapipago-includes/css/styles_rapipago.css\" rel=\"stylesheet\" type=\"text/css\"
+        />\r\n<script type=\"text/javascript\">\r\nfunction cargoCiudades() {\r\n\tvar
+        id = $(\"#provinciaSuc\").find(':selected').val();\r\n\t$('#ciudadSuc').load('consultar-ciudades.htm?provinciaId='+id);\r\n}\r\n\r\nfunction
+        cargoEmpresas() {\r\n\tvar id = $(\"#rubrosImp\").find(':selected').val();\r\n\t\r\n\t$('#empresasImp').load('consultar-empresas.htm?rubroId='+id);\r\n}\r\n\r\nfunction
+        buscar(tipo){\r\n\t var listTypeField = document.getElementsByName('listType');\r\n\t
+        listTypeField.value = tipo;\r\n \t document.forms[0].action = tipo+'-'+\"buscar.htm\";\r\n\t
+        document.forms[0].submit();\r\n\t}\r\n\t\r\nfunction verDetalle(id){\r\n\t
+        var sucursalIdField = document.getElementsByName('sucursalId');\r\n\t sucursalIdField.value
+        = id;\r\n\t document.forms[0].action = \"sucursal-detalle.htm?sucursalId=\"+id;\r\n\t
+        document.forms[0].submit();\r\n\t}\r\n\t\r\nfunction doPage(pageNumber){\r\n\t
+        \ var listTypeField = document.getElementsByName('listType')[0];\r\n\t listTypeField.value
+        = 'doPage';\r\n\t var actionOld = document.forms[0].action;\r\n\t var urlparts
+        = actionOld.split('?')\r\n\t var actionNew = '';\r\n\t \r\n\t if(urlparts[0]
+        != null && urlparts[0] != ''){\r\n\t   actionNew = urlparts[0] + '?pageNum='
+        + pageNumber;\r\n\t }else{\r\n\t   actionNew = document.forms[0].action;\r\n\t
+        }\r\n\r\n\t document.forms[0].action = actionNew;\r\n\t document.forms[0].submit();\r\n\t}\r\n\t\r\n</script>\r\n\r\n\r\n\r\n</head>\r\n\r\n<body>\r\n<table
+        width=\"1192\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\"
+        id=\"backGround\">\r\n  <tr>\r\n    <td>\r\n    <form id=\"form\" action=\"suc-buscar.htm\"
+        method=\"post\">\r\n    <table width=\"1192\"  border=\"0\" align=\"center\"
+        cellpadding=\"0\" cellspacing=\"0\">\r\n      <tr>\r\n        <td height=\"182\"
+        colspan=\"2\" align=\"center\"><object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\"
+        codebase=\"http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0\"
+        width=\"1192\" height=\"182\">\r\n            <param name=\"movie\" value=\"header.swf\"
+        />\r\n            <param name=\"quality\" value=\"high\" />\r\n            <param
+        name=\"wmode\" value=\"transparent\" />\r\n            <embed src=\"rapipago-includes/header.swf\"
+        width=\"1192\" height=\"182\" quality=\"high\" pluginspage=\"http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash\"
+        type=\"application/x-shockwave-flash\" wmode=\"transparent\"></embed>\r\n
+        \       </object></td>\r\n      </tr>\r\n      <tr>\r\n        <td width=\"865\"
+        height=\"120\" align=\"left\"><p><img src=\"rapipago-includes/title-sucursales.png\"
+        width=\"761\" height=\"150\" /></p></td>\r\n        <td width=\"327\" rowspan=\"2\"
+        align=\"center\" valign=\"top\">\r\n          <p>&nbsp;</p>\r\n          <table
+        width=\"284\" height=\"544\" border=\"0\" id=\"backGroundBuscador\">\r\n            <tr>\r\n
+        \             <td valign=\"top\"><table width=\"100%\" border=\"0\">\r\n                  <tr>\r\n
+        \                   <td height=\"83\">&nbsp;</td>\r\n                  </tr>\r\n
+        \                 <tr>\r\n                    <td height=\"167\" align=\"center\"><table
+        width=\"80%\" border=\"0\">\r\n                        <tr>\r\n                          <td
+        align=\"left\"><label>\r\n                            <input id=\"palabraSuc\"
+        name=\"palabraSuc\" class=\"busqueda\" onfocus=\"this.value=''; this.onfocus=null;\"
+        type=\"text\" value=\"Por palabra\" maxlength=\"100\"/>\r\n                          </label></td>\r\n
+        \                       </tr>\r\n                        <tr>\r\n                          <td
+        align=\"left\"><label>\r\n                            <select id=\"provinciaSuc\"
+        name=\"provinciaSuc\" class=\"combo\" style=\"width: 197px\" onchange=\"javascript:cargoCiudades();\">\r\n
+        \                             \t<option value=\"\">Seleccionar Provincia</option>\r\n\t\t\t\t\t\t\t\t<option
+        value=\"B\">BUENOS AIRES</option><option value=\"C\" selected=\"selected\">CAPITAL
+        FEDERAL</option><option value=\"K\">CATAMARCA</option><option value=\"H\">CHACO</option><option
+        value=\"U\">CHUBUT</option><option value=\"X\">CORDOBA</option><option value=\"W\">CORRIENTES</option><option
+        value=\"E\">ENTRE RIOS</option><option value=\"I\">EXTRANJERA</option><option
+        value=\"P\">FORMOSA</option><option value=\"Y\">JUJUY</option><option value=\"L\">LA
+        PAMPA</option><option value=\"F\">LA RIOJA</option><option value=\"M\">MENDOZA</option><option
+        value=\"N\">MISIONES</option><option value=\"Q\">NEUQUEN</option><option value=\"R\">RIO
+        NEGRO</option><option value=\"A\">SALTA</option><option value=\"J\">SAN JUAN</option><option
+        value=\"D\">SAN LUIS</option><option value=\"Z\">SANTA CRUZ</option><option
+        value=\"S\">SANTA FE</option><option value=\"G\">SANTIAGO DEL ESTERO</option><option
+        value=\"V\">TIERRA DEL FUEGO</option><option value=\"T\">TUCUMAN</option>\r\n\t\t\t\t\t\t\t</select>\r\n
+        \                         </label></td>\r\n                        </tr>\r\n
+        \                       <tr>\r\n                          <td align=\"left\">\r\n
+        \                           <select id=\"ciudadSuc\" name=\"ciudadSuc\" class=\"combo\"
+        style=\"width: 197px\">\r\n\t\t\t\t\t\t\t\t<option value=\"\">Seleccionar
+        Ciudad</option>\r\n\t\t\t\t\t\t\t\t<option value=\"AGRONOMIA\">AGRONOMIA</option><option
+        value=\"ALMAGRO\" selected=\"selected\">ALMAGRO</option><option value=\"BALVANERA\">BALVANERA</option><option
+        value=\"BARRACAS\">BARRACAS</option><option value=\"BELGRANO\">BELGRANO</option><option
+        value=\"BOEDO\">BOEDO</option><option value=\"CABALLITO\">CABALLITO</option><option
+        value=\"CHACARITA\">CHACARITA</option><option value=\"CIUDAD AUTONOMA BUENOS
+        AIRES\">CIUDAD AUTONOMA BUENOS AIRES</option><option value=\"COLEGIALES\">COLEGIALES</option><option
+        value=\"CONSTITUCION\">CONSTITUCION</option><option value=\"FLORES\">FLORES</option><option
+        value=\"FLORESTA\">FLORESTA</option><option value=\"LA BOCA\">LA BOCA</option><option
+        value=\"LINIERS\">LINIERS</option><option value=\"MATADEROS\">MATADEROS</option><option
+        value=\"MONSERRAT\">MONSERRAT</option><option value=\"MONTE CASTRO\">MONTE
+        CASTRO</option><option value=\"NUEVA POMPEYA\">NUEVA POMPEYA</option><option
+        value=\"NU&Ntilde;EZ\">NU&Ntilde;EZ</option><option value=\"PALERMO\">PALERMO</option><option
+        value=\"PARQUE AVELLANEDA\">PARQUE AVELLANEDA</option><option value=\"PARQUE
+        CHACABUCO\">PARQUE CHACABUCO</option><option value=\"PARQUE PATRICIOS\">PARQUE
+        PATRICIOS</option><option value=\"PATERNAL\">PATERNAL</option><option value=\"RECOLETA\">RECOLETA</option><option
+        value=\"RETIRO\">RETIRO</option><option value=\"SAAVEDRA\">SAAVEDRA</option><option
+        value=\"SAN CRISTOBAL\">SAN CRISTOBAL</option><option value=\"SAN NICOLAS\">SAN
+        NICOLAS</option><option value=\"SAN TELMO\">SAN TELMO</option><option value=\"VELEZ
+        SARSFIELD\">VELEZ SARSFIELD</option><option value=\"VILLA CRESPO\">VILLA CRESPO</option><option
+        value=\"VILLA DEL PARQUE\">VILLA DEL PARQUE</option><option value=\"VILLA
+        DEVOTO\">VILLA DEVOTO</option><option value=\"VILLA GENERAL MITRE\">VILLA
+        GENERAL MITRE</option><option value=\"VILLA LUGANO\">VILLA LUGANO</option><option
+        value=\"VILLA LURO\">VILLA LURO</option><option value=\"VILLA PUEYRREDON\">VILLA
+        PUEYRREDON</option><option value=\"VILLA RIACHUELO\">VILLA RIACHUELO</option><option
+        value=\"VILLA SANTA RITA\">VILLA SANTA RITA</option><option value=\"VILLA
+        SOLDATI\">VILLA SOLDATI</option><option value=\"VILLA URQUIZA\">VILLA URQUIZA</option>\r\n\t\t\t\t\t\t\t</select>\r\n\t\t\t\t\t\t
+        \ </td>\r\n                        </tr>\r\n                        <tr>\r\n
+        \                         <td align=\"right\"><label>\r\n                            <input
+        name=\"Buscar\" type=\"button\" class=\"searchButton\" id=\"Buscar\" value=\"Buscar\"
+        \ onclick=\"buscar('suc')\"/>\r\n                          </label></td>\r\n
+        \                       </tr>\r\n                    </table></td>\r\n                  </tr>\r\n
+        \                 <tr>\r\n                    <td height=\"93\">&nbsp;</td>\r\n
+        \                 </tr>\r\n                  <tr>\r\n                    <td
+        height=\"180\" align=\"center\"><table width=\"80%\" border=\"0\">\r\n                      <tr>\r\n
+        \                       <td align=\"left\"><label>\r\n                          <input
+        id=\"palabraImp\" name=\"palabraImp\" class=\"busqueda\" onfocus=\"this.value='';
+        this.onfocus=null;\" type=\"text\" value=\"Por palabra\" maxlength=\"100\"/>\r\n
+        \                       </label></td>\r\n                      </tr>\r\n                      <tr>\r\n
+        \                       <td align=\"left\"><label>\r\n                        \t<select
+        id=\"rubrosImp\" name=\"rubrosImp\" class=\"combo\" style=\"width: 197px\"
+        onchange=\"javascript:cargoEmpresas();\">\r\n                            \t<option
+        value=\"\" selected=\"selected\">Seleccionar Rubro</option>\r\n \t\t\t\t\t\t\t\t<option
+        value=\"12\">ACCESOS A INTERNET</option><option value=\"20\">ADMINISTRACION
+        DE CONSORCIOS</option><option value=\"35\">ASOCIACIONES SIN FINES DE LUCRO</option><option
+        value=\"1\">AUTOMOTRICES Y PLANES DE AHORRO</option><option value=\"29\">CLUBES</option><option
+        value=\"2\">COLEGIOS, INSTITUTOS Y UNIVERSIDADES</option><option value=\"25\">COMPRAS
+        POR INTERNET</option><option value=\"33\">CONSUMO</option><option value=\"21\">COOPERATIVAS
+        DE LUZ</option><option value=\"3\">COOPERATIVAS DE SERVICIOS</option><option
+        value=\"22\">COOPERATIVAS DE TELECOMUNICACIONES</option><option value=\"4\">COSMETICOS</option><option
+        value=\"26\">FIDEICOMISOS</option><option value=\"5\">FINANCIERAS Y BANCOS</option><option
+        value=\"7\">IMPUESTOS MUNICIPALES</option><option value=\"23\">IMPUESTOS NACIONALES</option><option
+        value=\"24\">IMPUESTOS PROVINCIALES</option><option value=\"999\">INDEFINIDO</option><option
+        value=\"6\">MEDICINAS PREPAGAS</option><option value=\"30\">MUTUALES</option><option
+        value=\"31\">OBRAS SOCIALES</option><option value=\"28\">PRESTAMOS</option><option
+        value=\"34\">RECUPERO DE DEUDA</option><option value=\"8\">SEGURIDAD Y ALARMAS</option><option
+        value=\"9\">SEGUROS</option><option value=\"11\">SERVICIO DE GAS</option><option
+        value=\"10\">SERVICIOS DE AGUA</option><option value=\"13\">SERVICIOS DE LUZ</option><option
+        value=\"27\">SERVICIOS PREPAGOS Y RECARGAS</option><option value=\"15\">TARJETAS
+        DE CREDITO</option><option value=\"16\">TELEFONIA CELULAR</option><option
+        value=\"17\">TELEFONIA FIJA</option><option value=\"32\">TURISMO</option><option
+        value=\"18\">TURISMO ESTUDIANTIL</option><option value=\"14\">TV SATELITAL
+        Y CABLE</option><option value=\"19\">VARIOS</option> \r\n\t\t\t\t\t\t\t</select>\r\n
+        \                       </label></td>\r\n                      </tr>\r\n                      <tr>\r\n
+        \                       <td align=\"left\">\r\n\t                        <select
+        id=\"empresasImp\" name=\"empresasImp\" class=\"combo\" style=\"width: 197px\">\r\n\t\t\t
+        \                   <option value=\"\" selected=\"selected\">Seleccionar Empresa</option>\r\n\t\t\t\t\t\t\t\t\r\n\t\t\t\t\t\t\t</select>\r\n\t\t\t\t\t
+        \   </td>\r\n                      </tr>\r\n                      <tr>\r\n
+        \                       <td align=\"left\"><label>\r\n                          <input
+        type=\"button\" class=\"searchButton\" value=\"Buscar\" onclick=\"buscar('emp')\"/>\r\n
+        \                       </label></td>\r\n                      </tr>\r\n                    </table></td>\r\n
+        \                 </tr>\r\n              </table></td>\r\n            </tr>\r\n
+        \         </table>\r\n          <input id=\"listType\" name=\"listType\" type=\"hidden\"
+        value=\"\"/> \r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td
+        align=\"center\" valign=\"top\">\r\n        \r\n        \r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table
+        width=\"735\" border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td
+        width=\"168\" rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">1342</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">Suarez
+        \ Marta Alicia\t\t </td>\r\n          </tr>\r\n          <tr>\r\n            <td
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\">Medrano 76</td>\r\n          </tr>\r\n
+        \         <tr>\r\n            <td align=\"right\" bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a
+        onclick=\"verDetalle('1342')\" href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n
+        \       </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n\t\t\r\n\t\t<table width=\"735\"
+        border=\"0\" cellpadding=\"10\">\r\n          <tr>\r\n            <td width=\"168\"
+        rowspan=\"3\" align=\"center\" bgcolor=\"#E8E8E8\" class=\"resultadosNumeroSuc\">7137</td>\r\n
+        \           <td width=\"521\" bgcolor=\"#003366\" class=\"resultadosTextWhite\">VIRGINIA
+        CENTURION GOMEZ</td>\r\n          </tr>\r\n          <tr>\r\n            <td
+        bgcolor=\"#BCDAE9\" class=\"resultadosText\">AV CORRIENTES 4577</td>\r\n          </tr>\r\n
+        \         <tr>\r\n            <td align=\"right\" bgcolor=\"#BCDAE9\" class=\"resultadosText\"><a
+        onclick=\"verDetalle('7137')\" href=\"#\">+ Ver mas</a></td>\r\n          </tr>\r\n
+        \       </table>\r\n         <br/>\r\n\t\t\r\n\t\t\r\n<!-- \t\t\t<ul class=\"paginador\">
+        -->\r\n\t\t\t\t\r\n\t\t\t\t\t\r\n\t\t\t\t<table border=\"0\" cellspacing=\"0\">\n<tr><td>Pages:</td><td>&nbsp;</td><td><a
+        href=\"index?pageNum=1\"><!-- \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('1');\"
+        title=\"1\">1&nbsp;</a>\r\n<!-- \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a
+        href=\"index?pageNum=2\"><!-- \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('2');\"
+        title=\"2\">2&nbsp;</a>\r\n<!-- \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><a
+        href=\"index?pageNum=3\"><!-- \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('3');\"
+        title=\"3\">3&nbsp;</a>\r\n<!-- \t\t\t\t\t</li> --></a></td><td>&nbsp;</td><td><!--
+        \t\t\t\t\t<li> -->\r\n\t\t\t\t\t<a href=\"javascript:doPage('4');\" title=\"4\">4&nbsp;</a>\r\n<!--
+        \t\t\t\t\t</li> --></td></tr></table>\n\r\n<!-- \t\t\t</ul> -->\r\n\t\t     \r\n
+        \         <p>&nbsp;</p></td>\r\n      </tr>\r\n      \r\n      <tr>\r\n        <td
+        height=\"50\" colspan=\"2\" align=\"center\"><img src=\"rapipago-includes/footer-text.png\"
+        width=\"991\" height=\"12\" /></td>\r\n      </tr>\r\n    </table>\r\n    </form>\r\n
+        \   </td>\r\n  </tr>\r\n</table>\r\n<script type=\"text/javascript\">\r\nswfobject.registerObject(\"FlashID\");\r\n</script>\r\n</body>\r\n</html>\r\n"
+    http_version: '1.1'
+  recorded_at: Mon, 23 Jul 2012 14:30:21 GMT
+recorded_with: VCR 2.2.4
