@@ -1,5 +1,4 @@
 require 'mechanize'
-require 'pry'
 
 class RapiPagoFinder
   def self.all(options = {})
