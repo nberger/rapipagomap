@@ -59,5 +59,25 @@ describe "rapi_pago_list" do
         @rapipagos[0]["city"].should == "almagro"
       end
     end
+
+    context "with real web limited by 5" do
+      let(:limit) {5}
+      before do
+        get "/list.json", provincia: "capital_federal", ciudad: "almagro", limit: limit
+
+        @rapipagos = MultiJson.load(last_response.body)
+      end
+
+      it "gets 5 addresses" do
+        @rapipagos.should have(5).items
+      end
+      it "gives address for some rapi pago stores" do
+        @rapipagos.map {|rp| rp["street_and_number"]}.should include("AV LA PLATA 537")
+        @rapipagos.map {|rp| rp["street_and_number"]}.should include("M BRAVO 7")
+      end
+      it "includes city for each address" do
+        @rapipagos[0]["city"].should == "almagro"
+      end
+    end
   end
 end
