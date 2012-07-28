@@ -6,7 +6,7 @@ class RapiPagoMap < Sinatra::Base
   helpers Sinatra::JSON
 
   get '/list.json' do
-    rapipagos = RapiPagoFinder.all(:province => params[:provincia], :city => params[:ciudad])
+    rapipagos = RapiPagoFinder.all(:province => params[:provincia], :city => params[:ciudad], :limit => params[:limit])
     json rapipagos
   end
 end

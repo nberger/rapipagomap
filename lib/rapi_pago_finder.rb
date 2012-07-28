@@ -3,20 +3,25 @@ require 'pry'
 
 class RapiPagoFinder
   def self.all(options = {})
+    province = options[:province]
+    city = options[:city]
+    limit = options[:limit].to_i if options[:limit]
+
     page = agent.get("http://www.rapipago.com.ar/rapipagoWeb/index.htm")
     search_form = find_form(page)
-    province = options[:province]
     search_form.field_with(:name => "provinciaSuc").options.detect {|opt| opt.text.downcase == province.gsub(/_/, " ").downcase}.select
     page = agent.submit(search_form)
     search_form = find_form(page)
-    city = options[:city]
     search_form.field_with(:name => "ciudadSuc").options.detect {|opt| opt.value.downcase == city.downcase}.select
     page = agent.submit(search_form)
 
     addresses = []
 
     each_page_from(page) do |page, page_num|
-      addresses.concat(grab_addresses(page))
+      new_addresses = grab_addresses(page)
+      new_addresses = new_addresses[0, limit - addresses.size] if limit < addresses.size + new_addresses.size
+      addresses.concat(new_addresses)
+      break if limit && addresses.size >= limit
     end
 
     # add city and province
