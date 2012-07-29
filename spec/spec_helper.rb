@@ -7,7 +7,8 @@
 
 ENV['RACK_ENV'] = 'test'
 
-require 'rapi_pago_map'
+require File.join(File.dirname(__FILE__), "..", "config", 'boot')
+
 require 'rack/test'
 require 'capybara'
 require 'capybara/dsl'
@@ -27,11 +28,4 @@ RSpec.configure do |config|
 
   config.include Rack::Test::Methods
   config.include Capybara::DSL
-  config.before :suite do
-    Capybara.app = RapiPagoMap.new
-  end
-end
-
-def app
-  RapiPagoMap.new
 end

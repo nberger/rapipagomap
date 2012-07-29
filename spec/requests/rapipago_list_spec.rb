@@ -4,6 +4,10 @@ require 'multi_json'
 describe "rapi_pago_list" do
   let(:limit) {100}
 
+  def app
+    RapiPagoMapApi.new
+  end
+
   context "when searching almagro" do
     let(:province) {"capital_federal"}
     let(:city) {"almagro"}
