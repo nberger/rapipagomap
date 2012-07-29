@@ -1,6 +1,6 @@
 require 'sinatra/base'
 require 'sinatra/json'
-require 'rapi_pago_finder'
+require_relative 'lib/rapi_pago_finder'
 
 class RapiPagoMapApi < Sinatra::Base
   helpers Sinatra::JSON
