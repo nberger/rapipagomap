@@ -36,6 +36,22 @@ describe "rapi_pago_list" do
       end
     end
 
+    context "with cassette and no limit" do
+      let(:limit) {nil}
+
+      before do
+        VCR.use_cassette('sucursales_almagro') do
+          get "/list.json", provincia: "capital_federal", ciudad: "almagro"
+        end
+
+        @rapipagos = MultiJson.load(last_response.body)
+      end
+
+      it "gets a lot of addresses" do
+        @rapipagos.should have_at_least(18).items
+      end
+    end
+
     context "with cassette limited by 5" do
       let(:limit) {5}
       before do

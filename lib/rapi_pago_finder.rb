@@ -18,7 +18,7 @@ class RapiPagoFinder
 
     each_page_from(page) do |page, page_num|
       new_addresses = grab_addresses(page)
-      new_addresses = new_addresses[0, limit - addresses.size] if limit < addresses.size + new_addresses.size
+      new_addresses = new_addresses[0, limit - addresses.size] if limit && limit < addresses.size + new_addresses.size
       addresses.concat(new_addresses)
       break if limit && addresses.size >= limit
     end
