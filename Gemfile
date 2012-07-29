@@ -5,12 +5,10 @@ gem "sinatra"
 gem "sinatra-contrib"
 
 gem "json"
-
 gem "thin"
-
 gem "pry"
-
 gem "mechanize"
+gem "haml"
 
 group :test do
   gem "rspec"
